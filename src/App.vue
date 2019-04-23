@@ -46,10 +46,10 @@
     </transition>
     <div class="fixed" @click="listEvent"></div>
     <div class="footer">
-      <div :class="['btn', {btn1: collectionState}]" @click="collectionEvent">{{collectionText}}</div>
+      <!--div :class="['btn', {btn1: collectionState}]" @click="collectionEvent">{{collectionText}}</div-->
       <!--div class="btn" @click="answerEvent">看答案</div-->
-      <div class="btn" @click="collectListEvent">收藏夹<span v-if="collectNum">({{collectNum}})</span></div>
-      <div class="btn" @click="errorListEvent">错题本<span v-if="errorHtmlData.length">({{errorHtmlData.length}})</span></div>
+      <!--div class="btn" @click="collectListEvent">收藏夹<span v-if="collectNum">({{collectNum}})</span></div-->
+      <!--div class="btn" @click="errorListEvent">错题本<span v-if="errorHtmlData.length">({{errorHtmlData.length}})</span></div-->
     </div>
     <li-model ref="collectList" type="pop" class="collectList">
       <div slot="modalbody">
@@ -126,13 +126,64 @@
       qIndex (n, o) {
         this.qIndex = n;
         this.qIndexChange();
+
+        console.log('qIndex changed!');
+        localStorage.setItem('qIndex', JSON.stringify(this.qIndex));
+      },
+
+      activeIndex: {
+        handler () {
+          console.log('activeIndex changed!');
+          localStorage.setItem('activeIndex', JSON.stringify(this.activeIndex));
+        },
+        deep: true
+      },
+
+      rightIndex: {
+        handler () {
+          console.log('rightIndex changed!');
+          localStorage.setItem('rightIndex', JSON.stringify(this.rightIndex));
+        },
+        deep: true
+      },
+
+      errorIndex: {
+        handler () {
+          console.log('errorIndex changed!');
+          localStorage.setItem('errorIndex', JSON.stringify(this.errorIndex));
+        },
+        deep: true
+      },
+
+      questionList: {
+        handler () {
+          console.log('questionList changed!');
+          localStorage.setItem('questionList', JSON.stringify(this.questionList));
+        },
+        deep: true
+      },
+
+      allQuestionState: {
+        handler () {
+          console.log('allQuestionState changed!');
+          localStorage.setItem('allQuestionState', JSON.stringify(this.allQuestionState));
+        },
+        deep: true
       }
+
     },
     mounted () {
       for (var i = 0; i < this.data.length; i++) {
         this.collectionList.push(false);
         this.allQuestionState.push({id: i, state: 1});// state 1:未做   2:对    3:错
       }
+      console.log('App mounted!');
+      if (localStorage.getItem('qIndex')) this.qIndex = JSON.parse(localStorage.getItem('qIndex'));
+      if (localStorage.getItem('activeIndex')) this.activeIndex = JSON.parse(localStorage.getItem('activeIndex'));
+      if (localStorage.getItem('rightIndex')) this.rightIndex = JSON.parse(localStorage.getItem('rightIndex'));
+      if (localStorage.getItem('errorIndex')) this.errorIndex = JSON.parse(localStorage.getItem('errorIndex'));
+      if (localStorage.getItem('questionList')) this.questionList = JSON.parse(localStorage.getItem('questionList'));
+      if (localStorage.getItem('allQuestionState')) this.allQuestionState = JSON.parse(localStorage.getItem('allQuestionState'));
     },
     methods: {
       checkEvent (num) {
@@ -216,8 +267,11 @@
       },
       collectListEvent () {
         this.collectHtmlData = this.getCollectList();
-        if (this.collectHtmlData.length > 0) this.$refs.collectList.modelOpen();
-        else this.showToast('您当前还没有收藏题目');
+        if (this.collectHtmlData.length > 0) {
+          this.$refs.collectList.modelOpen();
+        } else {
+          this.showToast('您当前还没有收藏题目');
+        }
       },
       showToast (str) {
         var me = this;
@@ -258,7 +312,7 @@
     background: #fff url(./images/list.svg) no-repeat center center;
     background-size: 30px;
     position: fixed;
-    top: 70%;
+    top: 80%;
     right: 15px;
     border-radius: 50%;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -281,7 +335,7 @@
       margin: 0 auto;
       width: 94%;
       font-size: 0;
-      height: 600px;
+      height: 60vh;
       overflow:hidden; 
       overflow-y:scroll;
       li {
@@ -452,15 +506,13 @@
   .box {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
+    position: relative;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
     align-items: center;
     font-family: 'Microsoft YaHei';
-    font-size: 15px;
+    font-size: 2vh;
     .question {
-      width: 100%;
-      height: 100%;
-      background: #fff;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       padding: 10px;
       box-sizing: border-box;
@@ -470,12 +522,11 @@
         padding: 10px;
         box-sizing: border-box;
         margin: 0;
-        font-size: 15px;
+        font-size: 2vh;
       }
       ul {
         padding: 0;
         margin: 0;
-        background: #efefef;
         li {
           list-style-type: none;
           line-height: 40px;
