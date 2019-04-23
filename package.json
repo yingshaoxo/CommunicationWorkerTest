@@ -1,8 +1,8 @@
 {
-  "name": "question",
+  "name": "CommunicationWorkerTest",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "beautifulBoys <1298947916@qq.com>",
+  "author": "beautifulBoys <1298947916@qq.com> | yingshaoxo",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -10,7 +10,8 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
-    "vue": "^2.2.2"
+    "vue": "^2.2.2",
+    "vue-headful": "^2.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",

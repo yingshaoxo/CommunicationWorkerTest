@@ -1,5 +1,9 @@
 <template>
   <div>
+    <vue-headful
+        title="通信工线务中级考试题库 - 伟大的圣弗朗西斯科英杰"
+        description="Ask for yingshaoxo"
+    />
     <div class="box">
       <div class="question">
         <div>
@@ -43,7 +47,7 @@
     <div class="fixed" @click="listEvent"></div>
     <div class="footer">
       <div :class="['btn', {btn1: collectionState}]" @click="collectionEvent">{{collectionText}}</div>
-      <div class="btn" @click="answerEvent">看答案</div>
+      <!--div class="btn" @click="answerEvent">看答案</div-->
       <div class="btn" @click="collectListEvent">收藏夹<span v-if="collectNum">({{collectNum}})</span></div>
       <div class="btn" @click="errorListEvent">错题本<span v-if="errorHtmlData.length">({{errorHtmlData.length}})</span></div>
     </div>
@@ -69,6 +73,8 @@
             <div class="item error" v-if="item.state === 3" @click="allQuestionEvent(item.id)">{{item.id + 1}}</div>
           </li>
         </ul>
+        </br>
+        <p style="text-align:center">Made by <span style="color:green;">beautifulBoys</span> and <span style="color:green;">yingshaoxo</span></p>
       </div>
       <div slot="modelfoot"></div>
     </li-model>
@@ -88,7 +94,7 @@
 </template>
 
 <script>
-  // import data from '../data.json';
+  import data from '../data.json';
   import model from './components/model.vue';
   export default {
     name: 'app',
@@ -275,6 +281,9 @@
       margin: 0 auto;
       width: 94%;
       font-size: 0;
+      height: 600px;
+      overflow:hidden; 
+      overflow-y:scroll;
       li {
         width: 20%;
         height: 60px;
