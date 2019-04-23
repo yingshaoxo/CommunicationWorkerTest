@@ -2,19 +2,10 @@
 
 # 问答系统
 
-> 这是一个模仿驾校APP答题的系统。题目和系统已分离，可以按格式加入自己的题目。
+> 这是一个答题系统，用于通信工考证。（属于一次性项目，用完即弃）
 
 
 ## 项目预览
-
-  电脑：https://beautifulboys.github.io/phone/question/question1/
-
-  手机：
-  <p align="center">
-    <img src="https://raw.githubusercontent.com/beautifulBoys/beautifulBoys.github.io/master/source/question/question.png"/>
-  </p>
-
-## 项目图片展示
 
   <p align="center" background="#333">
     <img src="https://raw.githubusercontent.com/beautifulBoys/beautifulBoys.github.io/master/source/question/1111.jpg" width="270px" border="1px solid #333"/>
@@ -36,4 +27,3 @@ npm run dev
 
 # 浏览器查看效果localhost:7777
 ```
-
