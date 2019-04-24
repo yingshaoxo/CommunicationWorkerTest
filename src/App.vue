@@ -4,6 +4,7 @@
         title="通信工线务中级考试题库 - 伟大的圣弗朗西斯科英杰"
         description="Ask for yingshaoxo"
     />
+    <link rel="manifest" href="manifest.json" />
     <div class="box">
       <div class="question">
         <div>
