@@ -3,11 +3,11 @@
   "short_name": "通信工考证",
   "description": "Ask yingshaoxo for it!",
   "lang": "zh-CN",
-  "start_url": "/",
+  "start_url": "/CommunicationWorkerTest/",
   "display": "fullscreen",
   "icons": [
     {
-      "src": "ic_launcher.png"
+      "src": "CommunicationWorkerTest/ic_launcher.png"
     }
   ]
 }

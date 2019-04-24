@@ -505,7 +505,7 @@
 
   .box {
     width: 100%;
-    height: 30%;
+    height: 32%;
     position: relative;
     margin-top: 20vh;
     margin-bottom: 10vh;
