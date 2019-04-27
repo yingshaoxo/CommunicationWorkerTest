@@ -74,7 +74,7 @@
           </li>
         </ul>
         </br>
-        <p style="text-align:center">Made by <span style="color:green;">beautifulBoys</span> and <span style="color:green;">yingshaoxo</span></p>
+        <p style="text-align:center">Made by <span style="color:green;">beautifulBoys</span> and <span><a style="color:green;" href="https://github.com/yingshaoxo" target="_blank">yingshaoxo</a></span></p>
       </div>
       <div slot="modelfoot"></div>
     </li-model>
