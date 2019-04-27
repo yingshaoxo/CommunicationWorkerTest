@@ -5,7 +5,7 @@
 
 ## How it looks like
 
-![Screen Shot](https://raw.githubusercontent.com/beautifulBoys/beautifulBoys.github.io/master/source/question/1111.jpg)
+![Screen Shot](Screenshot.png)
 
 
 ## Hot to run it
