@@ -5,7 +5,7 @@
 
 ## How it looks like
 
-![Screen Shot](Screenshot.png)
+![Screen Shot](Screenshot.png | width=360)
 
 
 ## Hot to run it
