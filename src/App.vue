@@ -1,4 +1,4 @@
-<CommunicationWorkerTesttemplate>
+<template>
   <div>
     <vue-headful
         title="通信工线务中级考试题库 - 伟大的圣弗朗西斯科英杰"
@@ -51,7 +51,7 @@
       <!--div class="btn" @click="collectListEvent">收藏夹<span v-if="collectNum">({{collectNum}})</span></div-->
       <!--div class="btn" @click="errorListEvent">错题本<span v-if="errorHtmlData.length">({{errorHtmlData.length}})</span></div-->
 
-    <!--p style="text-align:center" v-show="showNewVersion"><small><a style="color:green;" href="v3/index.html" target="_blank">new version</a></small></p-->
+    <p style="text-align:center" v-show="showNewVersion"><small><a style="color:green;" href="v3/index.html" target="_blank">new version</a></small></p>
     </div>
     <li-model ref="collectList" type="pop" class="collectList">
       <div slot="modalbody">
@@ -105,13 +105,11 @@
       'li-model': model
     },
     data () {
-      /*
-      var show = false;
+      var show = true;
       var currentUrl = window.location.pathname;
       if (currentUrl.indexOf('/v3') >= 0) {
         show = false;
       }
-      */
 
       return {
         data: data.list,
@@ -121,7 +119,7 @@
         errorIndex: -1,
         questionList: [],
         ansState: false,
-        showNewVersion: false,
+        showNewVersion: show,
         collectionList: [],
         collectHtmlData: [],
         collectNum: 0,
