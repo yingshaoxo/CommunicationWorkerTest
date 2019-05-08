@@ -105,6 +105,7 @@
 
 <script>
   import data from '../data.json';
+  import datav3 from '../datav3.json';
   import model from './components/model.vue';
   export default {
     name: 'app',
@@ -113,13 +114,22 @@
     },
     data () {
       var show = true;
+      var dataList = data.list;
+
       var currentUrl = window.location.pathname;
-      if (currentUrl.indexOf('/v3') >= 0) {
-        show = false;
+
+      var version = localStorage.getItem('version');
+      if (version === 'v3') {
+        if (currentUrl.indexOf('/v3') >= 0) {
+          show = false;
+          dataList = datav3.list;
+        } else {
+          window.open('v3/index.html', '_self');
+        }
       }
 
       return {
-        data: data.list,
+        data: dataList,
         qIndex: 0,
         activeIndex: -1,
         rightIndex: -1,
@@ -210,11 +220,13 @@
         this.$refs['my-modal'].hide();
       },
       toggleModal () {
-        // We pass the ID of the button that we want to return focus to
-        // when the modal has hidden
         this.$refs['my-modal'].toggle('#toggle-btn');
         localStorage.clear();
-        window.open('v3/index.html', '_blank');
+        localStorage.setItem('version', 'v3');
+
+        setTimeout(function () {
+          window.open('v3/index.html', '_self');
+        }, 1000);
       },
 
       checkEvent (num) {
