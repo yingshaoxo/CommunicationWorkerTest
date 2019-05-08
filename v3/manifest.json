@@ -1,0 +1,13 @@
+{
+  "name": "伟大的圣弗朗西斯科英杰",
+  "short_name": "通信工考证",
+  "description": "Ask yingshaoxo for it!",
+  "lang": "zh-CN",
+  "start_url": "/CommunicationWorkerTest/v3",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "CommunicationWorkerTest/ic_launcher.png"
+    }
+  ]
+}

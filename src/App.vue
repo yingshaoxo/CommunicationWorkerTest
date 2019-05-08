@@ -51,7 +51,14 @@
       <!--div class="btn" @click="collectListEvent">收藏夹<span v-if="collectNum">({{collectNum}})</span></div-->
       <!--div class="btn" @click="errorListEvent">错题本<span v-if="errorHtmlData.length">({{errorHtmlData.length}})</span></div-->
 
-    <p style="text-align:center" v-show="showNewVersion"><small><a style="color:green;" href="v3/index.html" target="_blank">new version</a></small></p>
+    <p style="text-align:center" v-show="showNewVersion" v-b-modal.modal-1><small style="color:green;">new version</small></p>
+    <div>
+      <b-modal id="modal-1" ref="my-modal" title="英杰友情提醒" hide-footer>
+        <p class="my-4">升级到新版本，会删除掉原有的答题数据。</p>
+        <b-button @click="hideModal" style="margin-bottom: 4">取消</b-button>
+        <b-button @click="toggleModal" variant="outline-danger">确定</b-button>
+      </b-modal>
+    </div>
     </div>
     <li-model ref="collectList" type="pop" class="collectList">
       <div slot="modalbody">
@@ -196,6 +203,20 @@
       if (localStorage.getItem('allQuestionState')) this.allQuestionState = JSON.parse(localStorage.getItem('allQuestionState'));
     },
     methods: {
+      showModal () {
+        this.$refs['my-modal'].show();
+      },
+      hideModal () {
+        this.$refs['my-modal'].hide();
+      },
+      toggleModal () {
+        // We pass the ID of the button that we want to return focus to
+        // when the modal has hidden
+        this.$refs['my-modal'].toggle('#toggle-btn');
+        localStorage.clear();
+        window.open('v3/index.html', '_blank');
+      },
+
       checkEvent (num) {
         if (!this.questionList[this.qIndex]) { // 判断当前题目是否做过
           this.activeIndex = num;
