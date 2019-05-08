@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js; cp data.json dist/; cp dist/* . -fr",
+    "build-v3": "yarn build; node build/build.js; cp datav3.json dist/data.json; mkdir v3;cp dist/* v3/ -fr",
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {

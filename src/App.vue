@@ -50,6 +50,8 @@
       <!--div class="btn" @click="answerEvent">看答案</div-->
       <!--div class="btn" @click="collectListEvent">收藏夹<span v-if="collectNum">({{collectNum}})</span></div-->
       <!--div class="btn" @click="errorListEvent">错题本<span v-if="errorHtmlData.length">({{errorHtmlData.length}})</span></div-->
+
+    <p style="text-align:center" v-show="showNewVersion"><small><a style="color:green;" href="v3/index.html" target="_blank">new version</a></small></p>
     </div>
     <li-model ref="collectList" type="pop" class="collectList">
       <div slot="modalbody">
@@ -90,6 +92,7 @@
       </div>
       <div slot="modelfoot"></div>
     </li-model>
+
   </div>
 </template>
 
@@ -102,6 +105,12 @@
       'li-model': model
     },
     data () {
+      var show = true;
+      var currentUrl = window.location.pathname;
+      if (currentUrl.indexOf('/v3') >= 0) {
+        show = false;
+      }
+
       return {
         data: data.list,
         qIndex: 0,
@@ -110,6 +119,7 @@
         errorIndex: -1,
         questionList: [],
         ansState: false,
+        showNewVersion: show,
         collectionList: [],
         collectHtmlData: [],
         collectNum: 0,
@@ -464,7 +474,7 @@
     width: 100%;
     height: 40px;
     display: flex;
-    margin: 20px 0;
+    margin: 10vh 0;
     font-size: 15px;
     font-family: 'Microsoft YaHei';
     .left {
