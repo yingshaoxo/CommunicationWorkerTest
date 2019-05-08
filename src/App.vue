@@ -55,7 +55,7 @@
     <div>
       <b-modal id="modal-1" ref="my-modal" title="英杰友情提醒" hide-footer>
         <p class="my-4">升级到新版本，会删除掉原有的答题数据。</p>
-        <b-button @click="hideModal" style="margin-bottom: 4">取消</b-button>
+        <b-button @click="hideModal" variant="outline-secondary" style="margin-bottom: 4">取消</b-button>
         <b-button @click="toggleModal" variant="outline-danger">确定</b-button>
       </b-modal>
     </div>
@@ -584,8 +584,8 @@
             color: #e8571b;
           }
           .sign {
-            width: 16px;
-            height: 16px;
+            width: 18px;
+            height: 18px;
             line-height: 16px;
             border-radius: 50%;
             display: inline-block;
