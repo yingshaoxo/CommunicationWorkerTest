@@ -7,7 +7,7 @@
   "display": "fullscreen",
   "icons": [
     {
-      "src": "./ic_launcher.png"
+      "src": "/CommunicationWorkerTest/ic_launcher.png"
     }
   ]
 }
