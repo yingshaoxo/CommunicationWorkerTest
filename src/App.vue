@@ -264,7 +264,7 @@
                         this.allQuestionState[this.qIndex].state = 2;
                         setTimeout(() => {
                             this.nextEvent();
-                        }, 500);
+                        }, 1000);
                     } else {
                         // 做错了
                         this.errorIndex = num;
