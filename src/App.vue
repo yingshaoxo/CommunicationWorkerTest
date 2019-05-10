@@ -252,6 +252,7 @@
             checkEvent(num) {
                 if (!this.questionList[this.qIndex]) {
                     // 判断当前题目是否做过
+                    // check if you have answered this before
                     this.activeIndex = num;
                     if (this.data[this.qIndex].answer === num) {
                         // 做对了
@@ -261,6 +262,9 @@
                             rightAns: num
                         };
                         this.allQuestionState[this.qIndex].state = 2;
+                        setTimeout(() => {
+                            this.nextEvent();
+                        }, 500);
                     } else {
                         // 做错了
                         this.errorIndex = num;
