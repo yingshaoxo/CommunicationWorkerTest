@@ -1,6 +1,7 @@
 <template>
     <div>
         <vue-headful title="通信工线务中级考试题库 - 伟大的圣弗朗西斯科英杰" description="Ask for yingshaoxo" />
+        <h5 style="text-align:center; margin-top:8vh; opacity: 0.4;">{{getCorrectRatio()}}%</h5>
         <div class="box">
             <div class="question">
                 <div>
@@ -48,14 +49,14 @@
             <!--div class="btn" @click="collectListEvent">收藏夹<span v-if="collectNum">({{collectNum}})</span></div-->
             <!--div class="btn" @click="errorListEvent">错题本<span v-if="errorHtmlData.length">({{errorHtmlData.length}})</span></div-->
     
-            <p style="text-align:center" v-show="showNewVersion" v-b-modal.modal-1>
+            <p style="text-align:center; margin-bottom:5px; opacity: 0.2;" v-show="showNewVersion" v-b-modal.modal-1>
                 <small style="color:green;">new version</small>
             </p>
             <div>
-                <b-modal id="modal-1" ref="my-modal" title="英杰友情提醒" centered="true" hide-footer>
-                    <p class="my-4">升级到新版本，会删除掉原有的答题数据。</p>
-                    <b-button @click="hideModal" variant="outline-secondary" style="margin-bottom: 4">取消</b-button>
-                    <b-button @click="toggleModal" variant="outline-danger">确定</b-button>
+                <b-modal id="modal-1" ref="my-modal" title="英杰 友情提醒" centered hide-footer>
+                    <p class="my-4">升级到新题库，原有的答题数据将被清空。</p>
+                    <b-button @click="hideModal" variant="success" style="margin-bottom: 4">取消</b-button>
+                    <b-button @click="toggleModal" variant="danger">确定</b-button>
                 </b-modal>
             </div>
         </div>
@@ -247,6 +248,22 @@
                 setTimeout(function() {
                     window.open("v3/index.html", "_self");
                 }, 1000);
+            },
+
+            getCorrectRatio() {
+                if (this.allQuestionState != []) {
+                    var all_you_have_answered = 0;
+                    var correct_num = 0;
+                    this.allQuestionState.forEach((obj) => {
+                        if (obj.state != 1) {
+                            all_you_have_answered += 1;
+                            if (obj.state == 2) {
+                                correct_num += 1;
+                            }
+                        }
+                    })
+                    return Math.trunc((correct_num/all_you_have_answered)*100)
+                }
             },
     
             checkEvent(num) {
@@ -497,7 +514,6 @@
     
     .footer {
         width: 100%;
-        line-height: 50px;
         position: fixed;
         bottom: 0;
         display: flex;
@@ -589,9 +605,8 @@
     
     .box {
         width: 100%;
-        height: 32%;
         position: relative;
-        margin-top: 20vh;
+        margin-top: 8vh;
         margin-bottom: 10vh;
         align-items: center;
         font-family: "Microsoft YaHei";
