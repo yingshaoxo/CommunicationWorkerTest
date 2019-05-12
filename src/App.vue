@@ -1,7 +1,7 @@
 <template>
     <div>
         <vue-headful title="通信工线务中级考试题库 - 伟大的圣弗朗西斯科英杰" description="Ask for yingshaoxo" />
-        <h5 style="text-align:center; margin-top:8vh; opacity: 0.4;">{{getCorrectRatio()}}%</h5>
+        <h5 style="text-align:center; margin-top:9vh; opacity: 0.4;">{{getCorrectRatio()}}%</h5>
         <div class="box">
             <div class="question">
                 <div>
@@ -606,7 +606,7 @@
     .box {
         width: 100%;
         position: relative;
-        margin-top: 8vh;
+        margin-top: 9vh;
         margin-bottom: 10vh;
         align-items: center;
         font-family: "Microsoft YaHei";
