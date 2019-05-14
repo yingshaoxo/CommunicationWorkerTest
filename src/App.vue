@@ -29,6 +29,9 @@
                 <div :class="[{button: qIndex !== data.length - 1}, {button1: qIndex === data.length - 1}]" @click="nextEvent">下一题</div>
             </div>
         </div>
+        <p style="text-align:center; opacity: 0.1;" @click="showAnswer()">
+            <small style="color:green;">next</small>
+        </p>
         <transition name="explain">
             <div class="explain" v-show="ansState">
                 <p>
@@ -54,9 +57,11 @@
             </p>
             <div>
                 <b-modal id="modal-1" ref="my-modal" title="英杰 友情提醒" centered hide-footer>
-                    <p class="my-4">升级到新题库，原有的答题数据将被清空。</p>
-                    <b-button @click="hideModal" variant="success" style="margin-bottom: 4">取消</b-button>
-                    <b-button @click="toggleModal" variant="danger">确定</b-button>
+                    <p class="my-4" style="text-align: center;">升级到新题库，原有的答题数据将被清空。</p>
+                    <div style="width: 100%; margin-top: 5vh">
+                        <b-button @click="toggleModal" variant="danger" style="float: left; width: 40%; margin: 1vw">确定</b-button>
+                        <b-button @click="hideModal" variant="success" style="float: right; width: 40%; margin: 1vw"">取消</b-button>
+                    </div>
                 </b-modal>
             </div>
         </div>
@@ -262,8 +267,24 @@
                             }
                         }
                     })
-                    return Math.trunc((correct_num/all_you_have_answered)*100)
+                    if (all_you_have_answered != 0) {
+                        return Math.trunc((correct_num/all_you_have_answered)*100)
+                    } else {
+                        return 0
+                    }
                 }
+            },
+
+            showAnswer() {
+                this.nextEvent();
+
+                var num = this.data[this.qIndex].answer;
+                this.rightIndex = num;
+                this.questionList[this.qIndex] = {
+                    userAns: num,
+                    rightAns: num
+                };
+                this.allQuestionState[this.qIndex].state = 2;
             },
     
             checkEvent(num) {
