@@ -1,7 +1,8 @@
 <template>
     <div>
         <vue-headful title="通信工线务中级考试题库 - 伟大的圣弗朗西斯科英杰" description="Ask for yingshaoxo" />
-        <h5 style="text-align:center; margin-top:9vh; opacity: 0.4;" @click="showAnswer()">{{getCorrectRatio()}}%</h5>
+        <h5 v-if="angry==false"  style="text-align:center; margin-top:9vh; opacity: 0.4;" @click="showAnswer()">{{getCorrectRatio()}}%</h5>
+        <h5 v-if="angry==true"  style="color: red; text-align:center; margin-top:9vh; opacity: 0.4;" @click="showAnswer()">{{getCorrectRatio()}}%</h5>
         <div class="box">
             <div class="question">
                 <div>
