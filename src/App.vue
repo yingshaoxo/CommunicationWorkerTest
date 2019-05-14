@@ -1,7 +1,7 @@
 <template>
     <div>
         <vue-headful title="通信工线务中级考试题库 - 伟大的圣弗朗西斯科英杰" description="Ask for yingshaoxo" />
-        <h5 style="text-align:center; margin-top:9vh; opacity: 0.4;">{{getCorrectRatio()}}%</h5>
+        <h5 style="text-align:center; margin-top:9vh; opacity: 0.4;" @click="showAnswer()">{{getCorrectRatio()}}%</h5>
         <div class="box">
             <div class="question">
                 <div>
@@ -29,9 +29,6 @@
                 <div :class="[{button: qIndex !== data.length - 1}, {button1: qIndex === data.length - 1}]" @click="nextEvent">下一题</div>
             </div>
         </div>
-        <p style="text-align:center; opacity: 0.1;" @click="showAnswer()">
-            <small style="color:green;">next</small>
-        </p>
         <transition name="explain">
             <div class="explain" v-show="ansState">
                 <p>
