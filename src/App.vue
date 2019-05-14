@@ -163,52 +163,64 @@
         },
         watch: {
             qIndex(n, o) {
-                this.qIndex = n;
-                this.qIndexChange();
-    
-                console.log("qIndex changed!");
-                localStorage.setItem("qIndex", JSON.stringify(this.qIndex));
+                if (this.angry == false) {
+                    this.qIndex = n;
+                    this.qIndexChange();
+        
+                    console.log("qIndex changed!");
+                    localStorage.setItem("qIndex", JSON.stringify(this.qIndex));
+                }
             },
     
             activeIndex: {
                 handler() {
-                    console.log("activeIndex changed!");
-                    localStorage.setItem("activeIndex", JSON.stringify(this.activeIndex));
+                    if (this.angry == false) {
+                        console.log("activeIndex changed!");
+                        localStorage.setItem("activeIndex", JSON.stringify(this.activeIndex));
+                    }
                 },
                 deep: true
             },
     
             rightIndex: {
                 handler() {
-                    console.log("rightIndex changed!");
-                    localStorage.setItem("rightIndex", JSON.stringify(this.rightIndex));
+                    if (this.angry == false) {
+                        console.log("rightIndex changed!");
+                        localStorage.setItem("rightIndex", JSON.stringify(this.rightIndex));
+                    }
                 },
                 deep: true
             },
     
             errorIndex: {
                 handler() {
-                    console.log("errorIndex changed!");
-                    localStorage.setItem("errorIndex", JSON.stringify(this.errorIndex));
+                    if (this.angry == false) {
+                        console.log("errorIndex changed!");
+                        localStorage.setItem("errorIndex", JSON.stringify(this.errorIndex));
+                    }
                 },
                 deep: true
             },
     
             questionList: {
                 handler() {
-                    console.log("questionList changed!");
-                    localStorage.setItem("questionList", JSON.stringify(this.questionList));
+                    if (this.angry == false) {
+                        console.log("questionList changed!");
+                        localStorage.setItem("questionList", JSON.stringify(this.questionList));
+                    }
                 },
                 deep: true
             },
     
             allQuestionState: {
                 handler() {
-                    console.log("allQuestionState changed!");
-                    localStorage.setItem(
-                        "allQuestionState",
-                        JSON.stringify(this.allQuestionState)
-                    );
+                    if (this.angry == false) {
+                        console.log("allQuestionState changed!");
+                        localStorage.setItem(
+                            "allQuestionState",
+                            JSON.stringify(this.allQuestionState)
+                        );
+                    }
                 },
                 deep: true
             }
@@ -307,9 +319,9 @@
                 var could_do_it = false;
                 this.questionList = [];
                 for (var i = 0; i < this.data.length; i++) {
-                    if (this.allQuestionState[i].state == 3) {
+                    if (this.allQuestionState.reverse()[i].state == 3) {
                         could_do_it = true;
-                        this.qIndex = i;
+                        this.qIndex = this.data.length - i - 1;
                         //this.activeIndex = -1;
                         this.rightIndex = -1;
                         this.errorIndex = -1;
