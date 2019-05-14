@@ -161,7 +161,8 @@
                 toast: false,
                 toastText: "",
                 allQuestionState: [],
-                angry: false
+                angry: false,
+                angry_wrong_list: []
             };
         },
         watch: {
@@ -236,18 +237,27 @@
             }
 
             console.log("App mounted!");
-            if (localStorage.getItem("qIndex"))
+
+            if (localStorage.getItem("qIndex")) {
                 this.qIndex = JSON.parse(localStorage.getItem("qIndex"));
-            if (localStorage.getItem("activeIndex"))
+            }
+
+            if (localStorage.getItem("activeIndex")) {
                 this.activeIndex = JSON.parse(localStorage.getItem("activeIndex"));
-            if (localStorage.getItem("rightIndex"))
+            }
+
+            if (localStorage.getItem("rightIndex")) {
                 this.rightIndex = JSON.parse(localStorage.getItem("rightIndex"));
-            if (localStorage.getItem("errorIndex"))
+            }
+
+            if (localStorage.getItem("errorIndex")) {
                 this.errorIndex = JSON.parse(localStorage.getItem("errorIndex"));
+            }
 
             if (localStorage.getItem("questionList")) {
                 this.questionList = JSON.parse(localStorage.getItem("questionList"));
             }
+
             if (localStorage.getItem("allQuestionState")) {
                 this.allQuestionState = JSON.parse(
                     localStorage.getItem("allQuestionState")
@@ -316,23 +326,39 @@
                 var could_do_it = false;
                 this.questionList = [];
                 for (var i = 0; i < this.data.length; i++) {
-                    var inversed_i = this.data.length - i - 1;
-                    if (this.allQuestionState[inversed_i].state === 3) {
-                        console.log(this.allQuestionState[inversed_i].state)
-                        could_do_it = true;
-                        this.qIndex = inversed_i;
-                        console.log(this.qIndex);
-                        this.activeIndex = -1;
-                        this.rightIndex = -1;
-                        this.errorIndex = -1;
-                        this.ansState = false;
+                    if (this.allQuestionState[i].state == 3) {
+                        if (this.angry_wrong_list.indexOf(i) > -1) {
+                            continue;
+                        } else {
+                            could_do_it = true;
+                            this.qIndex = i;
+                            this.activeIndex = -1;
+                            this.rightIndex = -1;
+                            this.errorIndex = -1;
+                            this.ansState = false;
+                            break;
+                        }
                     }
                 };
                 if (could_do_it == true) {
                     this.angry = true;
                 } else {
                     if (this.angry == true) {
-                        location.reload();
+                        //location.reload();
+                        if (localStorage.getItem("qIndex")) {
+                            var saved_qindex = JSON.parse(localStorage.getItem("qIndex"));
+                            if (saved_qindex == this.qIndex) {
+                                this.qIndex = saved_qindex + 1;
+                            } else {
+                                this.qIndex = JSON.parse(localStorage.getItem("qIndex"));
+                            }
+                        }
+                        this.activeIndex = -1;
+                        this.rightIndex = -1;
+                        this.errorIndex = -1;
+                        this.ansState = false;
+
+                        this.angry_wrong_list = [];
                     }
                     this.angry = false;
                 }
@@ -356,6 +382,9 @@
                         }, 500);
                     } else {
                         // 做错了
+                        if (this.angry == true) {
+                            this.angry_wrong_list.push(this.qIndex);
+                        }
                         this.errorIndex = num;
                         this.rightIndex = this.data[this.qIndex].answer;
                         this.questionList[this.qIndex] = {
