@@ -305,9 +305,12 @@
                 var could_do_it = false;
                 this.questionList = [];
                 for (var i = 0; i < this.data.length; i++) {
-                    if (this.allQuestionState.reverse()[i].state == 3) {
+                    var inversed_i = this.data.length - i - 1;
+                    if (this.allQuestionState[inversed_i].state === 3) {
+                        console.log(this.allQuestionState[inversed_i].state)
                         could_do_it = true;
-                        this.qIndex = this.data.length - i - 1;
+                        this.qIndex = inversed_i;
+                        console.log(this.qIndex);
                         this.activeIndex = -1;
                         this.rightIndex = -1;
                         this.errorIndex = -1;
@@ -317,9 +320,10 @@
                 if (could_do_it == true) {
                     this.angry = true;
                 } else {
+                    if (this.angry == true) {
+                        location.reload();
+                    }
                     this.angry = false;
-                    location.reload();
-                    //this.nextEvent();
                 }
             },
     
