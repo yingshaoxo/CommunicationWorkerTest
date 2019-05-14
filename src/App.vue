@@ -42,7 +42,8 @@
                 <div class="main">{{toastText}}</div>
             </div>
         </transition>
-        <div class="fixed" @click="listEvent"></div>
+        <div class="fixed_right" @click="listEvent"></div>
+        <div class="fixed_left" @click="doWrongList"></div>
         <div class="footer">
             <!--div :class="['btn', {btn1: collectionState}]" @click="collectionEvent">{{collectionText}}</div-->
             <!--div class="btn" @click="answerEvent">看答案</div-->
@@ -156,7 +157,8 @@
                 collectionText: "收藏",
                 toast: false,
                 toastText: "",
-                allQuestionState: []
+                allQuestionState: [],
+                angry: false
             };
         },
         watch: {
@@ -214,11 +216,14 @@
         mounted() {
             for (var i = 0; i < this.data.length; i++) {
                 this.collectionList.push(false);
+                /*
                 this.allQuestionState.push({
                     id: i,
                     state: 1
                 }); // state 1:未做   2:对    3:错
+                */
             }
+
             console.log("App mounted!");
             if (localStorage.getItem("qIndex"))
                 this.qIndex = JSON.parse(localStorage.getItem("qIndex"));
@@ -228,12 +233,25 @@
                 this.rightIndex = JSON.parse(localStorage.getItem("rightIndex"));
             if (localStorage.getItem("errorIndex"))
                 this.errorIndex = JSON.parse(localStorage.getItem("errorIndex"));
-            if (localStorage.getItem("questionList"))
+
+            if (localStorage.getItem("questionList")) {
                 this.questionList = JSON.parse(localStorage.getItem("questionList"));
-            if (localStorage.getItem("allQuestionState"))
+            }
+            if (localStorage.getItem("allQuestionState")) {
                 this.allQuestionState = JSON.parse(
                     localStorage.getItem("allQuestionState")
                 );
+                //
+                if (this.data.length != this.allQuestionState.length) {
+                    for (var i = 0; i < this.data.length; i++) {
+                        this.allQuestionState.push({
+                            id: i,
+                            state: 1
+                        }); // state 1:未做   2:对    3:错
+                    };
+                };
+                //
+            }
         },
         methods: {
             showModal() {
@@ -281,7 +299,29 @@
                     userAns: num,
                     rightAns: num
                 };
-                this.allQuestionState[this.qIndex].state = 2;
+
+                //this.allQuestionState[this.qIndex].state = 2;
+            },
+
+            doWrongList() {
+                var could_do_it = false;
+                this.questionList = [];
+                for (var i = 0; i < this.data.length; i++) {
+                    if (this.allQuestionState[i].state == 3) {
+                        could_do_it = true;
+                        this.qIndex = i;
+                        //this.activeIndex = -1;
+                        this.rightIndex = -1;
+                        this.errorIndex = -1;
+                        this.ansState = false;
+                    }
+                };
+                if (could_do_it == true) {
+                    this.angry = true;
+                } else {
+                    this.angry = false;
+                    this.nextEvent();
+                }
             },
     
             checkEvent(num) {
@@ -349,12 +389,16 @@
                 }
             },
             nextEvent() {
-                if (this.data.length > this.qIndex + 1) {
-                    this.qIndex += 1;
-                    this.activeIndex = -1;
-                    this.rightIndex = -1;
-                    this.errorIndex = -1;
-                    this.ansState = false;
+                if (this.angry == false) {
+                    if (this.data.length > this.qIndex + 1) {
+                        this.qIndex += 1;
+                        this.activeIndex = -1;
+                        this.rightIndex = -1;
+                        this.errorIndex = -1;
+                        this.ansState = false;
+                    }
+                } else {
+                    this.doWrongList();
                 }
             },
             answerEvent() {
@@ -422,7 +466,7 @@
 </script>
 
 <style lang="less" scoped>
-    .fixed {
+    .fixed_right {
         width: 50px;
         height: 50px;
         background: #fff url(./images/list.svg) no-repeat center center;
@@ -434,6 +478,22 @@
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         &:active {
             background: #eee url(./images/list.svg) no-repeat center center;
+            background-size: 30px;
+        }
+    }
+
+    .fixed_left {
+        width: 50px;
+        height: 50px;
+        background: #fff url(./images/angry.svg) no-repeat center center;
+        background-size: 30px;
+        position: fixed;
+        top: 80%;
+        left: 15px;
+        border-radius: 50%;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        &:active {
+            background: #eee url(./images/angry.svg) no-repeat center center;
             background-size: 30px;
         }
     }
