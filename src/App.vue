@@ -56,7 +56,10 @@
             <div>
                 <b-modal id="modal-1" ref="my-modal" title="英杰 友情提醒" centered hide-footer>
                     <p class="my-4" style="text-align: center;">升级到新题库，原有的答题数据将被清空。</p>
-                    <div style="width: 100%; margin-top: 5vh">
+                    <div style="text-align:center;">
+                        <b-button @click="clear_storage" variant="primary" style="margin: 1vw"><small>一键解决当前版本各种异常问题</small></b-button>
+                    </div>
+                    <div style="width: 100%; margin-top: 2vh">
                         <b-button @click="toggleModal" variant="danger" style="float: left; width: 40%; margin: 1vw">确定</b-button>
                         <b-button @click="hideModal" variant="success" style="float: right; width: 40%; margin: 1vw"">取消</b-button>
                     </div>
@@ -265,6 +268,14 @@
     
                 setTimeout(function() {
                     window.open("v3/index.html", "_self");
+                }, 1000);
+            },
+
+            clear_storage() {
+                this.$refs["my-modal"].toggle("#toggle-btn");
+                localStorage.clear();
+                setTimeout(function() {
+                    location.reload();
                 }, 1000);
             },
 
