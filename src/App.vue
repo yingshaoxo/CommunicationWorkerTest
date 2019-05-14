@@ -214,13 +214,11 @@
     
             allQuestionState: {
                 handler() {
-                    if (this.angry == false) {
-                        console.log("allQuestionState changed!");
-                        localStorage.setItem(
-                            "allQuestionState",
-                            JSON.stringify(this.allQuestionState)
-                        );
-                    }
+                    console.log("allQuestionState changed!");
+                    localStorage.setItem(
+                        "allQuestionState",
+                        JSON.stringify(this.allQuestionState)
+                    );
                 },
                 deep: true
             }
@@ -228,12 +226,10 @@
         mounted() {
             for (var i = 0; i < this.data.length; i++) {
                 this.collectionList.push(false);
-                /*
                 this.allQuestionState.push({
                     id: i,
                     state: 1
                 }); // state 1:未做   2:对    3:错
-                */
             }
 
             console.log("App mounted!");
@@ -253,16 +249,6 @@
                 this.allQuestionState = JSON.parse(
                     localStorage.getItem("allQuestionState")
                 );
-                //
-                if (this.data.length != this.allQuestionState.length) {
-                    for (var i = 0; i < this.data.length; i++) {
-                        this.allQuestionState.push({
-                            id: i,
-                            state: 1
-                        }); // state 1:未做   2:对    3:错
-                    };
-                };
-                //
             }
         },
         methods: {
@@ -322,7 +308,7 @@
                     if (this.allQuestionState.reverse()[i].state == 3) {
                         could_do_it = true;
                         this.qIndex = this.data.length - i - 1;
-                        //this.activeIndex = -1;
+                        this.activeIndex = -1;
                         this.rightIndex = -1;
                         this.errorIndex = -1;
                         this.ansState = false;
@@ -332,7 +318,8 @@
                     this.angry = true;
                 } else {
                     this.angry = false;
-                    this.nextEvent();
+                    location.reload();
+                    //this.nextEvent();
                 }
             },
     
