@@ -378,9 +378,15 @@
                             rightAns: num
                         };
                         this.allQuestionState[this.qIndex].state = 2;
-                        setTimeout(() => {
-                            this.nextEvent();
-                        }, 500);
+                        if (this.angry == false) {
+                            setTimeout(() => {
+                                this.nextEvent();
+                            }, 500);
+                        } else {
+                            setTimeout(() => {
+                                this.nextEvent();
+                            }, 1000);
+                        }
                     } else {
                         // 做错了
                         if (this.angry == true) {
