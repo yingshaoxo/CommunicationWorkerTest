@@ -52,6 +52,10 @@
             <!--div class="btn" @click="errorListEvent">错题本<span v-if="errorHtmlData.length">({{errorHtmlData.length}})</span></div-->
     
             <p style="text-align:center; margin-bottom:5px; opacity: 0.2;" v-show="showNewVersion" v-b-modal.modal-1>
+                本程序由 南京铁道职业技术学院 铁道通信1702 胡英杰 制作
+                </br>
+                <small>徐新宇、苏宇 协助数据优化</small>
+                </br>
                 <small style="color:green;">new version</small>
             </p>
             <div>
