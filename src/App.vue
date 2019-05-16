@@ -97,7 +97,7 @@
                     Made by
                     <span style="color:green;">beautifulBoys</span> and
                     <span>
-                  <a style="color:green;" href="https://github.com/yingshaoxo" target="_blank">yingshaoxo</a>
+                  <a style="color:green;" href="https://yingshaoxo.xyz" target="_blank">yingshaoxo</a>
                 </span>
                 </p>
             </div>
