@@ -59,6 +59,7 @@
                 <small>徐新宇、苏宇 协助数据优化</small>
                 </br>
                 <small style="color:green;" v-show="showNewVersion" v-b-modal.modal-1>new version</small>
+                <small style="color:green;" v-if="showNewVersion==false" @click="just_clear_storage">old version</small>
             </p>
             <div>
                 <b-modal id="modal-1" ref="my-modal" title="英杰 友情提醒" centered hide-footer>
@@ -290,6 +291,13 @@
 
             clear_storage() {
                 this.$refs["my-modal"].toggle("#toggle-btn");
+                localStorage.clear();
+                setTimeout(function() {
+                    location.reload();
+                }, 1000);
+            },
+
+            just_clear_storage() {
                 localStorage.clear();
                 setTimeout(function() {
                     location.reload();
