@@ -1,0 +1,4709 @@
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+IT资料共享基地
+HCIE RS H12-261 Updated:2019-05-07
+通过分数：600 分
+题目数量：240Q
+题库得分：930+
+
+4
+5
+
+室
+
+作
+
+西
+
+0
+3
+群
+q
+q
+
+工
+
+小
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+1
+1
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+注意：
+1. 本题库为 2019 年 5 月最新题库，分为中英文两种版本；
+2. 考场选项顺序会打乱；
+3. 考场单选选项为○,多选选项为□(不提示选择的数量),如下图：
+
+4
+5
+
+室
+
+作
+
+西
+
+0
+3
+群
+q
+q
+
+工
+
+小
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+1
+1
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+1. 使用 EVPN Type2 路线无法实现以下哪些功能？
+○主机 MAC 地址通告
+○主机 ARP 通告
+○BUM 包转发
+○主机 IP 路由通告
+答案：C
+
+2. 关于 VXLAN 网关的以下哪些陈述是错误的？
+○VXLAN 第 3 层网关可以分解为集中式和分布式网关。
+○VXLAN 第 3 层网关允许子网间 VXLAN 通信和外部网络访问。
+○VXLAN 二层网关绑定 VPN 实例。
+○VXLAN 第 2 层网关允许租户访问 VXLAN，并用于同一 VXLAN 上的子网之间的通信。
+答案：C
+
+4
+5
+
+0
+3
+群
+q
+q
+
+1
+1
+
+3. VRRP 优先级不能设置为 O，因此发送优先级为 0 的 VRRP 报文的设备会停止加入 VRRP 备
+份组，
+并立即通知备份设备成为 Master 设备，无需等待 Master_Down_Interval 定时器超时。
+○正确
+○错误
+答案：A
+
+室
+
+作
+
+4. 关于 BGP 属性的以下哪些陈述是正确的？
+○路径只能有一个 Community 属性值。
+○邻居 AS 的编号显示在 BGP 路由表项的 AS_Path 列表的右侧。
+○Local_ Pref 属性仅在 EBGP 对等体之间交换，不会通告给其他 AS。
+○将从 EBGP 对等体学到的路由发布给 IBGP 对等体时，BGP 发言者不会更改该路由的
+Next_Hop 属性。
+
+西
+
+小
+
+工
+
+答案：D
+
+5. 需要访问 VXLAN 网络中不同 VPN 的子网，有关一个子网的信息如下：RT = 10:10 RT =
+1000:1000EVPN 实例中导出 1000，VPN 实例中 RT-100：100 导出。可以为另一个子网进行以
+下哪种配置？
+□EVPN 实例中均为 1000:1000
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+□1000:1000 都在 VPN 实例中出现
+□在 VPN 实例中均为 10:10
+□EVPN 实施 1000:1000 export
+答案：BD
+
+6. 现有如下拓扑，据此分析下列说法正确的是：
+
+4
+5
+
+0
+3
+群
+q
+q
+
+1
+1
+
+○因为 R2 做了路由聚合，R1 的 IP 路由表中只存在 10.0.0.0/16 的路由条目
+○R1 的 IP 路由表中存在 10.0.2.2/32 和 10.0.3.3/32 的路由条目
+○R1 的 IP 路由表中同时存在 10.0.3.3/32 和 10.0.0.0/16 的路由条目
+○R1 的 IP 路由表中存在 10.0.2.2/32 和 10.0.0.0/16 的路由条目
+
+室
+
+西
+
+小
+
+作
+
+工
+
+答案：C
+
+7. 在将网络中使用的 IPv4 地址更换成 IPv6 地址的过程中出现了很多过渡技术。这些技术被
+分为两类：一类是 IPv4/IPv6 共存技术，一类是 IPv4/IPv6 互通技术，则下列选项中哪些技术
+属于 IPv4/IPv6 共存技术?
+□NAT64
+□IPv6 over IPv4
+□Dual-Stack
+□ISATAP
+答案：BCD
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+8. 哪种发送给 NMS 的 SNMP 消息类型报告事件是可靠的?
+○Response
+○Trap
+○Inform
+○Get
+○Get Bulk
+答案：C
+
+9. 书店提供有线网络供客户在线学习。但是，有些用户突然无法访问网络。排除故障后，
+发现 DHCP 地址池中的所有 IP 地址都已用完。以下哪一项是最好的解决问题的方法？
+○配置静态 ARP 绑定表项
+○配置 IPSG
+○配置 DAI
+○限制可以在接口上学习的 DHCP Snooping 绑定表项的最大数量
+
+4
+5
+
+答案：D
+
+0
+3
+群
+q
+q
+
+1
+1
+
+10. 假设已经在 PE 路由器上部署了配置了 OSPF，LDP 和静态路由的 BGP/MPLS IPv4 VPN，
+以启用 NSF 功能，需要配置以下哪些协议才能在 PE 路由器上启用 GR 功能？
+□OSPF
+□MPLS LDP
+□BGP
+□静态路由
+
+室
+
+工
+
+答案：ABC
+
+西
+
+小
+
+作
+
+11. 以下属于单包攻击的是？
+□特殊控制报文攻击
+□扫描探测攻击
+□DDoS 攻击
+□畸形报文攻击
+答案：ABD
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+12. LAND 的攻击的手段为，攻击者向目标主机发送一个源地址和目的地址均为目的主机，源
+端口和目的端 口相同的 SYN 报文报文，接收端在等待发送端的最终 ACK 报文时，该连接
+一直处于半连接状态，导致接收端有限 TCP 资源的浪费
+○正确
+○错误
+答案：B
+
+13. 假设某端口整形速率为 100Mbps，该接口各业务的输入带宽及配置的 PIR 如下。那么经
+过第一轮调度， EF 队列分配的带宽为多少？
+
+4
+5
+
+○30M
+○15M
+○90M
+○25M
+答案：B
+
+西
+
+小
+
+作
+
+室
+
+0
+3
+群
+q
+q
+
+工
+
+14. 网络管理员定义了一个流量监管策略如下：
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+1
+1
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+应用该策略的路由器端口已经有 10 秒左右的空闲了，此时有 c1 类型的巨量突发流量在瞬
+间到来， 那么着色为绿色的数据包将会有多少个字节?
+○256K 字节
+○32K 字节
+○48128 字节
+○80128 字节
+
+4
+5
+
+答案：C
+
+15. 数字证书不包含下列哪项?
+○公钥信息
+○数字信封
+○数字签名
+○颁发者
+
+工
+
+16. 下面哪些操作可以在组播网络上实现快速故障检测?
+□缩短 Join/Prune 消息的 Holdtime
+□降低接口发送 Hello 消息的时间间隔
+□邻居间建立 PIM BFD 会话
+□降低发送 Join/Prune 消息的时间间隔
+
+西
+
+小
+
+室
+
+作
+
+答案：B
+
+0
+3
+群
+q
+q
+
+答案：BC
+
+17. 以下哪些攻击属于 DoS(Denial of service)攻击？
+A、单包攻击
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+1
+1
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+B、源 IP 地址欺骗攻击
+C、中间人攻击
+D、泛洪攻击
+答案：BD
+
+18. 以下关于 LDP 可靠性，描述错误的是？
+○通过 LDP FRR 也可以为来自非最优下一跳的标签映射生成 LSP，并作为主 LSP 的备份，建
+立转发表项
+○LDP 与 IGP 联动，需要 IGP 抑制路由的发布，保证 LDP 与 IGP 路径一致
+○手动配置的 LDP FRR 策略默认是 32 位的备份路由触发 LDP 建立备份 LSP
+○LDP GR(Graceful Restart)利用 MPLS 转发平面与控制平面分离的特点，实现设备在协议重启
+或主备倒换时转发不中断。
+答案：C
+
+室
+
+答案：ABC
+
+作
+
+4
+5
+
+0
+3
+群
+q
+q
+
+19. 相较于 IGMPv1，IGMPv2 协议做了哪些改进？
+□增加了特定组查询报文
+□增加了离组报文
+□增加了最大响应时间字段
+□增加了特定源组查询报文
+
+1
+1
+
+20. 在路由器上运行 display mpls Isp 命令查看 LSP 信息。 命令输出如下：
+
+西
+
+工
+
+小
+
+下列哪项是正确的？
+○发送目的 IP 地址为 4.4.4.4 的数据包时，路由器直接发送，不添加任何标签。
+○路由器收到标签为 1024 的数据包后，将标签更改为标签 1027，然后发送该数据包。
+○发送目的 IP 地址为 2.2.2.2 的数据包时，路由器直接发送，不添加任何标签。
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+○发送目的 IP 地址为 3.3.3.3 的数据包时，路由器会在发送之前将标签 1026 添加到数据包
+中。
+答案：C
+
+21. 以下关于跨域 MPLS VPN 的说法，描述错误的是?
+□公网标签只采用 LDP 时，对于跨域 VPN-OptionC 方案 2,报文转发过程中需要用到三层标
+签。
+□对于跨域 VPN-OptionB 方式，两个 ASBR 之间需要建立 MP-EBGP 邻居关系。
+□对于跨域 VPN-OptionA 方式，两个 ASBR 之间传递的路由是普通 IPv4 路由。
+□对于跨域 VPN-OptionB 方式，两台 ASBR-PE 之间用多个接口(包括子接口)互连，每个接口
+关联一个 VPN，每个 ASBR-PE 都把对端当成 CE。
+答案：AD
+
+4
+5
+
+1
+1
+
+22. 如果在组播网络中运 PIM-SM，则需要在组播源到接收者之间构建组播转发树，才能使
+接收者接收到组播数据，则下列对于构建的组播转发树描述正确的选项有哪些？
+□RP 与接收者之间构建的是 RPT 树
+□组播源与 RP 之间构建的是 RPT 树
+□RP 与接收者之间构建的是 SPT 树
+□组播源与 RP 之间构建的是 SPT 树
+
+室
+
+答案：AD
+
+作
+
+23. 关于 MPLS 网络模型中,设备对报文的处理方式,以下描述错误的是?
+□标签转发路径 LSP 是在转发报文过程中通过各种协议确定并建立的。
+□LER 和 LSR 都会进行标签分发。
+□LSR 上肯定不剥离标签。
+□对进入 MPLS 域的 IP 报文，设备会进行丢弃处理。
+
+西
+
+小
+
+0
+3
+群
+q
+q
+
+工
+
+答案：CD
+
+24. 在整个 IP 组播网络上启用 SSM。 关于 SSM 的以下哪些陈述是正确的？
+□不需要 RP。
+□只有 RPT 用于 SSM。
+□当网络上有多个源且组播路由简单时，建议使用 SSM。
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+□SSM 适用于一对多应用。
+□只有 SPT 用于 SSM。
+答案：ADE
+
+25. 如下图所示，企业希望通过 MPLS 在总部和分支机构之间实现成功访问 VPN。分支机构
+的 VPN 流量必须通过总部转发，以进行流量监控。 关于此解决方案的以下哪些陈述是错误
+的？
+
+4
+5
+
+室
+
+0
+3
+群
+q
+q
+
+1
+1
+
+○当 Hub-CE 和 Hub-PE 使用 EBGP 传输路由信息时，Hub-PE 必须能够接受 AS 号重复一次的
+路由，才能接收 Hub-CE 发布的路由。
+○OSPF 可用于在 Hub-CE 和 Hub-PE 之间以及 Spoke-PE 和 Spoke-CE 之间交换路由信息。
+○BGP 可用于在 CE 和 PE 之间交换 VPN 路由信息。
+○可以在 Spoke-PE 之间建立 MP-IBGP 对等体关系，交换 VPN 路由信息。
+
+作
+
+西
+
+小
+
+工
+
+答案：D
+
+26. 在域内 MPLS BGP VPN 网络中,数据包在进入公网转发时，会被封装上两层 MPLS 标签，
+下列关于两层标签的描述，错误的是?
+○缺省情况下，路由器为所有发往对端 PE 的 VPNv4 路由分配同一标签值。
+○私网标签由 MP-BGP 传递路由时携带分发，公网标签由 LDP 协议分发。
+○出口 PE 在判断报文应被送到哪个出口 CE 时，使用内层标签。
+○MPLS BGP VPN 中使用到两层标签:公网标签(也称为外层标签)和私网标签(也称为内层标
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+签)。
+答案：A
+
+27. 下列关于 NDP 解析链路层地址的过程是否正确？
+
+4
+5
+
+○True
+○False
+答案：B
+
+工
+
+28. 您被分配了尽可能压缩 IPv6 地址的任务。如果原始 IPv6 地址为
+2013:0000:130F:0000:0000:09C0:876A:130B，以下哪个是压缩格式的 IPv6 地址？
+○213:13F:9C:876A:13B
+○2013:130F:9C0:876A:130B
+○2013:0:130F:0:0:9C0:876A:130B
+○2013:0:130F:0:0:090:876A:130B
+○2013:0:130F::9C0:876A:130B
+
+西
+
+小
+
+作
+
+室
+
+0
+3
+群
+q
+q
+
+1
+1
+
+答案：E
+
+29. 以下关于 IS-IS 路由汇总的陈述中哪一项是正确的？
+○可以配置路由聚合，并在所有类型的路由器上生效。
+○路由汇总仅在 Level-2 路由器上生效。
+○路由聚合仅对 Level-1 路由器生效。
+○路由聚合仅在 Level-1-2 路由器上生效。
+答案：D
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+30. 在现有的 OSPF 网络中，哪种类型的 LSA 会导致 ISPF 计算？
+□Type 1 LSA
+□Type 3 LSA
+□Type 4 LSA
+□Type 2 LSA
+□Type 5 LSA
+答案：BCE
+
+答案：AC
+
+工
+
+32. 关于 OSPF 协议中的 stub 区域，下列说法正确的是？
+□stub 区域中不能存在 ASBR
+□虚链路不能穿越 stub 区域
+□stub 区域不允许注入 type7 LSA
+□骨干区域不能配置为 stub 区域
+
+西
+
+小
+
+作
+
+室
+
+4
+5
+
+0
+3
+群
+q
+q
+
+31. 以下哪些关于 IS-IS 路由泄露的陈述是正确的？
+□可以在 IPv6 环境中配置 IS-IS 路由泄露。
+□在 IS-IS 路由泄漏中，要泄露的路由不能是汇总路由。
+□IS-IS 路由泄漏不会导致邻居震荡。
+□IS-IS 路由泄漏用于防止路由环路。
+□可以在 Level-1 路由器上配置 IS-IS 路由泄露。
+
+1
+1
+
+答案：ABCD
+
+33. 以下关于 ISIS 的 LSP 分片扩展描述正确的是?
+○使 ISIS 路由器生成更多的 LSP 分片，用来携带更多的 ISIS 信息。
+○ISIS 的分片扩展对 Hello 包同样有效。
+○ISIS 的分片扩展是通过增加虚拟系统来实现的，最多可以扩展成 1000 个虚拟系统。
+○ISIS 路由器可产生的分片数最大为 1024。
+答案：A
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+34. 关于BGP的联盟，以下描述错误的是？
+○联盟将一个AS划分为若干个子AS，联盟外部AS仍认为联盟是一个AS
+○联盟的子AS号，默认会通告给联盟以外的BGP对等体
+○联盟内子自治系统号可以使用私有的AS号。华为NE/AR路由器，一个联盟最多可以配置32
+个子自治系统号
+○联盟可以很容易的检测到AS内的选路循环，因为子AS之间运行的是 EBGP
+答案：B
+
+4
+5
+
+35. OSPF中的五类LSA用于传递外部路由，关于五类 LSA下列说法错误的是
+
+0
+3
+群
+q
+q
+
+1
+1
+
+○与ASBR处于同一个区域的路由器通过区域内LSA和五类LSA就可以计算出外部路由
+○在ABR和ASBR上配置相应的策略都可以过滤五类LSA
+
+○五类LSA由ASBR通告，并且在非Stub/NSSA区域内的OSPF网络中泛洪
+
+○在五类LSA中包含FA地址，该FA地址为0.0.0.0，只是作为保留没有实际作用
+
+室
+
+答案：D
+
+作
+
+西
+
+小
+
+工
+
+36. 在 OSI 参考模型和 TCP/IP 模型中共享哪些层？
+□表达层
+□应用层
+□运输层
+□会话层
+□数据链路层
+答案：BC
+
+37. 使用 ip 配置的 AS-Path 过滤器可以匹配以下哪些 AS_Path 属性值为 path-filter 1
+permit.*（100 | 400）$ command？
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+□100
+□3100
+□300 4200
+□1234 1400
+答案：ABD
+
+38. 关于OSPF协议的Stub区域和NSSA区域，以下说法错误的有？
+○Stub区域中不允许注入Type 5 LSA，而NSSA区域中允许注入Type 5 LSA
+○Stub区域和NSSA区域都允许注入Type 3 LSA
+○Stub区域和NSSA区域都不允许注入Type 4 LSA
+○Stub区域中不允许注入Type7 LSA，而NSSA区域允许注入Type7 LSA
+答案：A
+
+4
+5
+
+0
+3
+群
+q
+q
+
+1
+1
+
+39. 在两台建立了 IBGP 邻居的直连设备之间，
+执行 shutdown 命令关闭其中一台设备的接口，
+BGP 连接不会立即断开。
+○正确
+○错误
+答案：A
+
+作
+
+室
+
+40. 关于Filter-policy以下描述正确的是？
+○使用Filter-Policy，在OSPF中的ASBR上，可以对type 5 LSA和type 7 LSA的生成进行过滤
+○前缀列表既可以过滤路由，也可以用于过滤数据包
+○Filter-Policy可以对接收或者发布的链路状态信息进行过滤，可以修改路由条目的属性
+○使用前缀列表过滤路由时，表项ip ip-prefix 1 deny 0.0.0.0 0 less-equal 32表示只匹配缺省路
+由
+
+西
+
+小
+
+工
+
+答案：A
+
+41. 如图所示，R1、R2、R3 同时运行 OSPF 并宣告各自的环回口，如下描述错误的是？
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+○R2 上可以使用 filter-policy export 命令过滤 R3 的环回口路由
+○R2 上可以在 Area1 中使用 filter export 命令过滤 R3 的环回口路由
+○R2 上可以在 Area0 中使用 filter import 命令过滤 R3 的环回口路由
+○R1 上可以使用 filter-policy import 过滤 R3 的环回口路由
+答案：A
+
+42. 配置 IS-IS 区域认证后，下列哪个 IS-IS 报文携带认证信息？
+○IS-IS Level-1 SNP 和 LSP
+○IS-IS Level-1 Hello PDU
+○IS-IS Level-2 Hello PDU
+○IS-IS Level-2 SNP 和 LSP
+答案：A
+
+0
+3
+群
+q
+q
+
+4
+5
+
+1
+1
+
+43. 如果路由器A的GigabitEthernet0/0/0接口发出的OSPFv3 Hello报文当中Option字段值为
+
+室
+
+0x000013，下 列描述正确的是？
+
+□路由器A的GigabitEthernet0/0/0接口属于NSSA区域
+
+作
+
+□路由器A的GigabitEthernet0/0/0会参加IPv6路由计算
+
+工
+
+□路由器A是具备转发能力的OSPFv3 设备
+□路由器A支持AS-External-LSA泛洪
+
+西
+
+小
+
+答案：BCD
+
+44. 拓扑图和配置如下，现在希望 R1 路由表当中不存在 10.0.3.3/32 的明细路由条目，下列
+说法能实现此需求的有
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+4
+5
+
+0
+3
+群
+q
+q
+
+1
+1
+
+□在 R3 上面配置路由汇总，把路由汇总为 10.0.0.0/16
+□在 R2 上面配置路由汇总，把路由汇总为 10.0.0.0/16
+□在 R2 上面配置 filter-policy，通过 ACL 匹配 10.0.3.3/32，同时应用在 export 方向
+□在 R1 上面配置 filter-policy，通过 ACL 匹配 10.0.3.3/32，同时应用在 import 方向
+答案：AD
+
+工
+
+45. 路径选择工具可以定义多个条目，以下哪个工具将在配置结束时自动生成拒绝任何条目
+□Route policy
+□IP-prefix
+□Community -filter
+□AS-Path- filter
+
+西
+
+小
+
+作
+
+室
+
+答案：BCD
+
+46. 如下图拓扑所示，建立相应对等体关系，AS400 收到 AS100 发出的 1.1.1.1/32 网络路由，
+AS-Path 属性为？
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+4
+5
+
+○100 200 300
+○400 300 200 100
+○100 200 300 400
+○300 200 100
+
+室
+
+答案：D
+
+作
+
+0
+3
+群
+q
+q
+
+1
+1
+
+47. 如果没有区域划分，以下关于链路状态路由协议的哪些陈述是正确的？
+□同一路由域中的路由器可能会重复接收相同的链路状态信息
+□整个路由域中的路由器具有相同的 LSDB
+□每个路由器都建立路由域拓扑。
+□每个路由器从更新的路由信息中学习路由条目，并将它们添加到路由表中。
+□路由器将所有链路状态信息从邻居发送到所有其他邻居，以确保数据库中的数据同步。
+
+西
+
+小
+
+QQ群305411430
+
+工
+
+答案：ABCDE
+
+48. 关于 OSPFv3 路由聚合的以下哪些配置是正确的？
+□[Huawei] ospfv3 1
+[Huawei-ospfv3-1] asbr-summary fc00:0:0::48 cost 20 tag 100
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+□[Huawei] ospfv3 1
+[Huawei-ospfv3-1] abr-summary fc00:0:0::48 cost 400
+□[Huawei] ospf3 1
+[Huawei-ospfv3-1]area 1
+[Huawei-ospfv3-1-area-0.0.0.1] abr-summary fc00:0:0::48 cost 400
+□[Huawei] ospfv3 1
+[Huawei-ospfv3-1]area 1
+[Huawei-ospfv3-1-area-0.0.0.1] asbr-summary fc00:0:0::48 cost 20 tag 100
+□[Huawei]interface gigabitethernet 1/0/0
+[Huawei-GigabitEthernet1 / 0/0] asbr-summary fc0O:0:0::48 cost 20
+答案：AC
+
+49. 华为设备中，ISIS 在引入外部路由并设置路由信息的外部路由标记时，ISIS 的 Metric 类
+型无需修改保持默认即可。
+○正确
+○错误
+
+4
+5
+
+答案：B
+
+0
+3
+群
+q
+q
+
+1
+1
+
+50. 配置 AS-path-Filter ip as-path-filtr 10 permit_100$表示匹配从 AS100 接收的路由。
+○正确
+○错误
+
+室
+
+作
+
+答案：B
+
+工
+
+51. 该图显示了路由器数据。以下哪项陈述是错误的？
+
+西
+
+小
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+○R3 的系统 ID 为 0003.0000.0000
+○R3 是 Level-1-2 路由器
+○R3 是 Level-1 链接的 DIS
+○R3 是 Level-2 链接的 DIS
+答案：B
+
+室
+
+作
+
+QQ群305411430
+
+0
+3
+群
+q
+q
+
+4
+5
+
+1
+1
+
+52. 广播型网络，在邻居关系建立之后才开始进行 DIS 的选举
+○正确
+○错误
+
+西
+
+工
+
+答案：A
+
+小
+
+53. 在 LACP 协议使用过程中,以下描述正确的是?
+□可以通过以下命令避免 Eth- Trunk 接口因物理链路原因频繁震荡：
+interface eth-trunk 1
+lacp preempt enable
+lacp preempt delay delay-time
+□可以通过以下命令在已启用的链路聚合组中配置进行源 IP 地址进行负载分担：
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+interface eth-trunk 1
+load-balance src-dst-ip
+□可以通过以下命令在已启用的链路聚合组中删除成员接口：
+interface Gigabitethemnet0/0/1
+shutdown
+interface Gigabitethernet0/0/1
+undo eth-trunk 1
+interface Gigabitethernet0/0/1
+undo shutdown
+□可以通过以下命令启用的链路聚合组中加入成员接口：
+interface GigabitEthernet0/0/1
+shutdown
+interface eth-trunk 1
+trunkport GigabitEthernet0/0/1
+interface GigabitEthernet0/0/1
+undo shutdown
+答案：AC
+
+0
+3
+群
+q
+q
+
+4
+5
+
+1
+1
+
+54. 路由策略的 if-match 不能直接引用以下哪些属性？
+○Community-filter
+○IP-prefix
+○AS-Path-filter
+○正则表达式
+
+室
+
+西
+
+小
+
+作
+
+工
+
+答案：B
+
+55. 如果所示 R1 与 R2 之间为 PPP 链路，并且直连接口不在同一个网段，但是 R1 和 R2 直连
+接口可以通信，而相同 IP 规划的情况下以太网链路不能通信，原因是？
+□R1 和 R2 互联 POS 口，通过 IPCP 学到了对方直连接口的 24 位子网路由
+□R1 和 R2 互联 POS 口，通过 IPCP 学到了对方直连接口的 32 位主机路由
+□R1 和 R2 的互联 POS 口，通过 LCP 学习到了对端接口的 MAC 地址，不需要 ARP 请求 MAC
+地址
+□R1 和 R2 的互联 POS 口的数据报文不需要封装以太网头部，不需要使用 ARP 请求 MAC 地
+址
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+答案：BD
+
+56. 关于 PPPoE 数据帧的以下哪些陈述是正确的？
+□Ethernet_Type 字段的固定值为 Ox8863
+□ppp 会话的 Session_ID 字段必须是 Discovery 阶段中指定的值，不能更改
+□当 PPPoE 用于传输会话数据时，Code 必须设置为 0x0
+□建立 PPPoE 会话后，所有以太网数据包都是单播的
+答案：ABD
+
+57. 通过下面显示命令，可以判断产生交换机环路故障的是
+
+4
+5
+
+○
+
+○
+
+西
+
+小
+
+室
+
+作
+
+0
+3
+群
+q
+q
+
+工
+
+○
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+1
+1
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+○
+答案：D
+
+58. 以下关于交换机接口 Access 模式下收发数据帧的过程描述正确的是？
+○Access 模式下在收到带标签的数据帧时直接丢弃
+○Access 模式下只接收不带标签的数据帧
+○数据帧在进入交换机接口时，交换机会学习数据帧里的目的 MAC 地址
+○Access 模式下在发送时会剥离掉数据帧的 VLAN 标签
+答案：D
+
+4
+5
+
+0
+3
+群
+q
+q
+
+59. SWA 和 SWB 通过两个物理以太网链路连接。 SWA 具有以下接口配置
+
+这两个链接是聚合的
+假设 SWB 上的配置是正确的。 鉴于此信息，以下哪项陈述是正确的？
+□GigabitEthernet 1/0/1 和 GigabitEthernet1/0/2 可以添加到同一个 LAG，无需更改当前
+配置
+□在 SWA 和 SWB 上配置链路聚合后，如果使能了 MSTP，则为 GigabitEthernet1/0/1 和
+GigabitEthernet1/0/2。进入 MSTP 中的 Forwarding 状态
+□ 只 有 配 置 GigabitEthemet1/0/2 后 , 才 能 将 GigabitEthernet1/0/1 和
+GigabitEthernet1/0/2 加入同一个 LAG。更改为与 GigabitEthernet1/0/1 相同
+□GigabitEthernet1/0/1 和 GigabitEthernet1/0/2 不能添加到同一个 LAG，因为允许的
+VLAN 不同。
+
+室
+
+作
+
+西
+
+小
+
+1
+1
+
+工
+
+答案：CD
+
+60. 如果有一台华为交换机运行 RSTP 协议，那么该交换机某一端口上的 BPDU 什么时候会
+被老化?
+○在接口上，RSTP 不会老化 BPDU
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+○在超过 6 秒之后
+○在 MaxAge 超时之后
+○在 Hold time 超时之后
+○在 Forward Delay 超时之后
+答案：D
+
+61. 跨设备链路聚合实现了数据流的传输和堆叠成员交换机的相互备份，但是由于堆叠设备
+间堆叠线缆的带 宽有限，可以通过以下哪种方式提高转发效率？
+○通过堆叠卡连接堆叠设备
+○使能堆叠多主检查功能
+○配置堆叠系统 MAC 地址切换
+○使能流量本地优先转发
+答案：D
+
+室
+
+答案：BCD
+
+作
+
+63. 现有一台交换机运行了 RSTP。如果网络拓扑发生改变，那么由该交换机自动学习到的二
+层转发表项会发生什么变化？
+○所有表项均删除
+○只有与收到 TC 消息的端口相关的表项才会被删除
+○除了与边缘端口相关的表项不删除之外，其他表项均删除
+○如果老化时间设置为 15 秒，那么超过老化时间的条目均会被删除
+○除了与边缘端口相关的表项和与收到 TC 消息的端口相关的表项不删除之外，其他表项均
+删除。
+
+西
+
+小
+
+4
+5
+
+0
+3
+群
+q
+q
+
+62. 下列关于 PPP 协议中 CHAP 认证功能描述正确的是?
+□如果认证方没有配置用户名，则被认证方接口下也可以不配置密码
+□使用认证序列 ID、随机数和密钥通过 MD5 算法算出一个 Hash 值
+□需要三次报文交互认证、只在网络上传送用户名而不传送口令
+□CHAP 认证的被认证方接口下必须配置用户名
+
+1
+1
+
+工
+
+答案：E
+
+64. 以下关于华为交换机中 MUX VLAN 描述正确的是
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+○在同一个 VLAN 下，MUX VLAN 可以和 Super VLAN 混合使用
+○MUX VLAN 分为 Principal VLAN 和 Subordinate VLAN，
+Subordinate VLAN 又分为 Separate VLAN
+和 Isolate VLAN
+○每个 Separate VLAN 可以绑定多个 Principal VLAN
+○Principal Port 可以和 MUX VLAN 内所有的接口通信
+答案：D
+
+65. 当你对一个部署了华为设备的局域网进行排错时，你发现该局域网中有大量未知源
+MAC 地址的单播帧。大量未知源 MAC 地址单播帧会对交换机造成最大的危害是？
+○消耗可用的带宽
+○增加电源的功耗
+○占用缓存帧的内存
+○消耗系统中可用的 MAC 地址表项
+○占用 TCAM 表项
+
+4
+5
+
+答案：D
+
+0
+3
+群
+q
+q
+
+1
+1
+
+66. 在 RSTP 中，哪种端口能够提供备份的路径已达到生成树的根节点？该端口处于什么状
+态
+○Alternate 端口和 Learning 状态
+○Alternate 端口和 Forwarding 状态
+○根端口和 Listening 状态
+○Designate 端口和 Listening 状态
+○Alternate 端口和 Discarding 状态
+
+室
+
+西
+
+小
+
+作
+
+工
+
+答案：E
+
+67. 以下哪些选项可能会影响 IBGP 邻居的建立？
+□认证不成功
+□BGP 协议版本不一致
+□IBGP Multi-hop 未配置
+□IGP 路由不通
+答案：ABD
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+68. 以下关于 BGP 的 RD 属性过滤器，描述正确的是？
+□如果配置了 RD-filter，但路由的 RD 没有与规则中定义的任何一个 RD 匹配，则默认匹配结
+果是 Permit。
+□RD-filter 配置的规则之间使用是”或”的关系
+□如果没有配置 RD-filter，却引用这个 RD-filter 进行过滤，则匹配结果是 deny
+□多条规则之间按照配置顺序进行匹配
+答案：BD
+
+69. ISIS 在广播多路访问网络中会选举 DIS，下面关于 DIS 的说法正确的是?
+□ISIS 通过比较优先级来选举 DIS，如果优先级一致则比较 MAC 地址
+□DIS 通过周期性发送 CSNP 消息来保证数据库的同步
+□在广播多路访问性网络中，DIS 以三倍的频率发送 Hello PDU
+□DIS 支持抢占功能，新的 DIS 抢占成功后，不需要泛洪任何 LSP 报文
+答案：ABC
+
+4
+5
+
+0
+3
+群
+q
+q
+
+1
+1
+
+70. OSPFv3协议是一个单独开发的协议，它与OSPFv2有些不同之处，关于OSPFv3是基于链路
+的而不是网段，以下说法错误的是？
+○对连接到链路上的两台路由器，即使它们的IPv6地址前缀不同，依然可以建立邻居关系
+○对连接到链路上的两台路由器，即使不配置单播IPv6地址，也可以建立邻居关系
+○OSPFv3路由器从邻居获得的路由信息，都会使用邻居的Link-local地址作为转发报文的下一
+跳
+○除了虚连接以外，所有的OSPFv3接口都使用Link-local地址作为报文的目的地址
+答案：D
+
+西
+
+小
+
+作
+
+室
+
+工
+
+71. 关于TCP的滑动窗口，下面哪些描述是错误的？
+□重传计时器超时后，发送端还没有收到确认，会重传未被确认的数据
+□发送端不需要传输完整的窗口大小的报文
+□TCP 滑动窗口允许在收到确认之前发送多个数据包
+□滑动窗口大小只能增加或者保持不变
+□发送端宣告初始窗口大小
+答案：DE
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+72. 如图所示，在IPv4和IPv6的环境中，ISIS的NET地址中SEL字段始终取值为00
+
+○正确
+○错误
+答案：A
+
+73. 如果所示，
+某台路由器的 LSDB 的一部分 LSP 如下图第一条所示。
+先收到了一条新的 LSP，
+如下图中的第二跳，下列说法错误的有
+
+0
+3
+群
+q
+q
+
+○本路由器会把新收到的LSP放到LSDB
+○本路由器会忽略从邻居收到的LSP
+
+4
+5
+
+1
+1
+
+○如果是点到点网络，本路由器会发送PSNP
+
+○如果是广播网络，DIS会在下一个CSNP报文中，包含此LSP的摘要信息
+
+西
+
+室
+
+作
+
+答案：A
+
+工
+
+74. 关于BGP路由过滤，以下描述错误的是？
+
+小
+
+□对于本地发布的路由，配置路由策略，策略都是在BGP路由表添加路由之前生效的
+□Route-Policy的node间的过滤关系是“或”，即只要通过一个node的过滤，就可通过
+Route-Policy。
+□在收到BGP对等体的路由时，执行路由策略，过滤不需要的BG路由，这些路由不会被添加
+到本地BGP路由表
+□Route-Policy的同一个node中，针对不同属性的多个if-match 子句是“或”的关系
+答案：AD
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+75. IPv6 环境中部署ISIS协议，下列说法中正确的是
+○在广播型网络中，IPv4和IPv6DIS 优先级可以分别设置
+○缺省情况下，广播网络接口在Level-1和Level-2的DIS优先级为1
+○在同一个广播型网络中，如果每台路由器同时支持IPv4和IPv6，IPv4和IPv6的DIS一定是同
+一台设备
+○ISIS接口下配置ISIS silent，那么此接口不会发送ISIS包，但是会接收ISIS包
+答案：A
+
+76. BGP引入其他协议的路由后，在BGP路由表中的下一跳，与所引入路由协议的下一跳一致
+○正确
+○错误
+
+4
+5
+
+答案：B
+
+0
+3
+群
+q
+q
+
+1
+1
+
+77. 现有一个AS-path-filter，ip as-path-filter 1 permit ^100(_100)*(_400)*,该 As-path-filter不能
+匹配哪个AS-PATH属性
+○100 400
+
+室
+
+○100 400 400 400
+○100 200 900
+
+作
+
+○100
+
+工
+
+答案：C
+
+西
+
+小
+
+78. 关于BGP反射器描述正确的是？
+□路由反射器可以将从IBGP邻居学习到的路由通告所有client和non-client
+□在没有路由反射器的情况下IBGP邻居关系需要全互联，路由反射器的引入可以降低对全互
+联的要求
+□路由反射器可以将从non-client学习到的路由通告给所有的client
+□路由反射器可以将从一个client学习到的路由通告其他client和non-client
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+答案：BCD
+
+79. BGP连接成功后再down掉，不可能的原因有哪些？
+○Open报文协商失败
+○路由更新报文中的必遵属性丢失
+○BGP连接建立后，在协商的holdtime时间内收不到keepalive报文
+○接收到错误的BGP报文
+答案：A
+
+80. 当配置ISIS区域认证的时候，哪种ISIS报文会携带认证信息
+○ISIS的Level-1的SNP和LSP
+○ISIS的Level-1的Hello报文
+
+4
+5
+
+○ISIS的Level-2的SNP和LSP
+○ISIS的Level-2的Hello报文
+答案：A
+
+室
+
+0
+3
+群
+q
+q
+
+1
+1
+
+81. 关于ISIS进程当中的domain-authentication-mode md5 hello命令解释正确的是
+○路由域认证主要是用来让Level-1和Level-2的SNP和LSP报文在传递过程当中携带认证信息
+
+作
+
+○同一个路由域的所有路由器domain认证方式都为MD5，密码为hello，ISIS SNP和LSP才会正
+常扩散
+
+工
+
+○该命令主要是用来让ISIS的Hello报文在传递过程中携带认证信息
+
+西
+
+○ISIS的认证无法应用在IPv6环境下
+
+小
+
+答案：B
+
+82. Level-1-2 IS会向Level-1区域内传送Level-2 LSP，如果Level-2 LSP中ATT位置1，则表示该区
+域中的Level-1可以通过此Level-1-2 IS通往外部区域
+○正确
+○错误
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+答案：B
+
+83. 在OSPF的广播网络中，同一个网段内有四台路由器RTA、RTB、RTC和RTD，其DR优先级
+为2、1、1和0，Router ID分别为192.168.1.1、192.168.2.1、192.168.3.1和192.168.4.1，若在
+此4台路由器上同时启用OSPF协议，OSPF选出的BDR为
+○RTB
+○RTC
+○RTA
+○RTD
+答案：B
+
+4
+5
+
+84. 命令ip as-path-filter 1 permit ^12.*74$可以匹配到哪个AS_PATH
+○AS_PATH (32 1274 23)
+○AS_PATH (123 621 743 2374)
+○AS_PATH (321 12 2374)
+○AS_PATH (125 328 74 23)
+
+室
+
+答案：B
+
+作
+
+0
+3
+群
+q
+q
+
+1
+1
+
+85. 某公司网络中运行OSPF 协议，某工程师为了深入了解OSPF机制在网络中执行抓包操作，
+
+工
+
+以下关于OSPF报文描述正确的是？
+
+西
+
+□LS Update报文通过发送详细的LSA信息来同步链路状态数据库
+
+小
+
+□当收到LS Update报文后，该路由器必须发送LS Ack予以确认
+□接口加入OSPF区域后立即发送Hello 报文
+□LS Update报文仅在建立邻接关系的时候发送
+答案：AC
+
+86. 如下拓扑图，R1可以通过R2和R3访问internet，R1和R2，R1和R3之间建立EBGP连接，R2,R3
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+属于同一个AS，分别通过BGP发布缺省路由，要求R1访问internet的流量优选R2，下列做法
+可以实现的有
+
+□R2 指定对等体 R1 在 export 方向设置 MED 属性为 150
+□R1 指定对等体 R3 在 import 方向设置 MED 属性为 150
+□R2 指定对等体 R1 在 export 方向设置本地优先级 150
+□R1 指定对等体 R2 在 import 方向设置本地优先级为 150
+答案：BD
+
+4
+5
+
+0
+3
+群
+q
+q
+
+1
+1
+
+87. 除了无状态地址自动配置外，IPv6 设备还可以通过 DHCPv6 获得地址、网关、DNS 等信
+息
+○正确
+○错误
+答案：B
+
+作
+
+室
+
+88. 网络管理员准备用 6to4 自动隧道在 IPv4 网络上承载 IPv6 数据，路由器接口的 IPv4 地址
+是 138.14.85.210, 所以对应的隧道地址为 2001:8a0e:55d2:1:230:65ff:fe2c:9a6.
+○正确
+○错误
+
+西
+
+小
+
+工
+
+答案：B
+
+89. 在 IPv6 网络中，两个节点 A 和 B 互为邻居，如果节点 A 向节点 B 发送 NS 消息，如果节
+点 B 收到消息后回复 NA 消息，则在节点 A 上查看，邻居状态将会标志成什么？
+○Reachable
+○Stale
+○Probe
+○Incomplete
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+答案：A
+
+90. 以下关于 MPLS 的描述错误的是？
+○LDP、MP-BGP 等动态信令协议的标签空间范围是 16-1023
+○MPLS 标签的长度是 20 比特，用于报文转发
+○采用 Pipe 模式的 TTL 处理方式时，IP 报文在 MPLS 网络传输，IP 报文的 TTL 值只在 MPLS 入
+节点和出节点分别减 1
+○MPLS 支持多层标签嵌套，最内层标签的 S 位值是 1
+答案：A
+
+91. RD 用于区分不同 VPN 中的相同 IP 地址。RD 包含多少 bit？
+○16
+○64
+○32
+○128
+答案：B
+
+0
+3
+群
+q
+q
+
+4
+5
+
+1
+1
+
+92. 在跨域 VPN-OptionB 方式的报文转发中，在两个 ASBR 要对公网 LSP 标签做一次交换。
+○正确
+○错误
+答案：B
+
+西
+
+小
+
+作
+
+室
+
+工
+
+93. 以下关于 MPLS 标签相关信息，描述错误的是？
+○MPLS 标签的长度为 4 字节，封装在链路层和网络层之间
+○默认情况下，设备支持 PHP 特性，支 PHP 的 Egress 节点分配给倒数第二跳节点的标签值
+为3
+○如果标签中的栈底标识 S=0，表明该标签是栈底标签，直接进行 IP 转发
+○当标签值为 0 时，标示该标签应该被弹出，且报文的转发必须基于 IPv4
+答案：C
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+94. 某网络设备上查看所有 VPN 实例的详细信息，结果如下，以下哪些说法是错误的？
+
+□本端配置的 VPN 中使能 IPv6 地址簇的实例总数是 1 个
+□该设备会为 VPN-Instance vpna 的每一条路由都分配一个标签
+□VPN-Instance vpna 不会接收 RT 为 2:1 的 VPN 路由
+□GigabitEthernet1/0/0 接口绑入了 VPN-Instance vpna
+
+4
+5
+
+答案：AB
+
+0
+3
+群
+q
+q
+
+1
+1
+
+95. 如果某一组组播中配置了多个候选 RP，则从多个候选 RP 中选举该组的 RP 需要比较下
+列哪些参数
+□C-RP 的优先级
+□与用户加入的组地址匹配的 C-RP 服务的组范围的掩码长度
+□C-RP 接口的 IP 地址
+□C-RP 接口的编号
+答案：ABC
+
+西
+
+小
+
+作
+
+室
+
+工
+
+96. 在运行了 PIM-SM 的组播路由器之间需要选举出 DR 用于负责源端或成员端组播数据的
+收发，则下列对于 DR 选举规则描述正确的是哪一项？
+○先比较 DR 优先级，优先级相同，则需要比较 PIM 路由器的接口 IP 地址来选举 DR
+○接口掩码长的 PIM 路由器被选举为 DR
+○DR 优先级值低的 PIM 路由器被选举为 DR
+○IP 地址小的路由器被选举为 DR
+答案：A
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+97. 如图所示，分支和总部之间使用冗余链路建立 IPSEC VPN，同时在 Router_B 上对来自分
+支 1 的流量开启 URPF，以下哪些选项说法正确
+
+□使用 IPSEC 主备链路冗余备份时，在物理接口下使用 URPF 功能，建议使用 URPF 松散模
+式
+□使用 IPSEC 多链路冗余备份时，在 tunnel 接口下使能 URPF 功能，可以使用 URPF 严格模
+式
+□使用 IPSEC 主备链路冗余备份时，在物理接口下使能 URPF 功能，可以使用 URPF 严格模
+式
+□使用 IPSEC 多链路冗余备份时，在物理接口下使能 URPF 功能，可以使用 URPF 严格模式
+
+4
+5
+
+答案：AB
+
+0
+3
+群
+q
+q
+
+1
+1
+
+98. HTTP 协议基于 TCP，因此可以使用 TCP Flood 攻击防御方法防御住 HTTP Flood 攻击
+○正确
+○错误
+
+室
+
+答案：B
+
+作
+
+99. 如图所示存在两个 IPv6 网络可以访问 IPv4 网络，同时两个 IPv6 网络之间需要建立 IPSEC
+隧道进行通信， 请问下列哪种封装模式可以满足上述需求？
+
+西
+
+工
+
+小
+
+○ESP+隧道模式
+○以上选项都不对
+○AH+传输模式
+○AH+隧道模式
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+答案：A
+
+100. 当 VRP 中的 ACL 有多条匹配规则(rule)的时候，
+关于匹配顺序，
+以下哪种说法是正确的？
+○确认情况下，按照 Rule-ID，从小到大进行匹配
+○缺省情况下，按照“深度优先”的原则进行匹配
+○确认情况下按照先匹配 permit，后匹配 deny 的次序进行匹配
+○只有一种匹配顺序，无法修改。
+答案：A
+
+101. CIR、BC 和 TC 之间有什么关系
+○TC=CIR/BC
+○CIR=TC/BC
+○CIR=BE/TC
+○TC=BC/CIR
+答案：D
+
+0
+3
+群
+q
+q
+
+4
+5
+
+1
+1
+
+102. 某家庭用户开通了一条 10Mb/s 的宽带，运营商为提高用户体验，用户在进行测速时
+可以稳定在 12Mb/s， 如果我们使用令牌桶技术实现此需求，下列哪种方式是最优的
+○cir 10000 pir 12000
+○cir 10000 cbs 10000 pbs 12000
+○cir 8000 pir 12000
+○cir 10000 cbs 12000 pbs 12000
+
+室
+
+西
+
+小
+
+作
+
+工
+
+答案：A
+
+103. 下列选项中对于各种协议最优路由选举的描述正确的是哪个？
+○OSPF 会将 LSDB 中的全部路由信息放入 IP 路由表
+○BGP 中下一跳不可达的路由也会被放进 IP 路由表
+○从 BGP 和 OSPF 学到到达同一目的网段的不同路由条目，通过比较协议的 preference
+值选择最优路由加入到 IP 路由表
+○BGP 协议中通过比较路由条目的 cost 值选择到达同一目的网段的最优路由
+答案：C
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+104. 如下拓扑图，图中路由器所有接口全部开启 ISIS 协议，下列说法正确的有
+
+□如果
+□如果
+□如果
+□如果
+
+R3
+R3
+R1
+R1
+
+的
+的
+的
+的
+
+GE0/0/0 接口
+Ethernet 0/0/0
+Ethernet 0/0/0
+Ethernet 0/0/1
+
+down，那么 R2 会成为 master 设备
+接口 down，那么 R2 会成为 master 设备
+接口 down，那么 R2 会成为 master 设备
+接口 down，那么 R2 会成为 master 设备
+
+答案：AC
+
+0
+3
+群
+q
+q
+
+4
+5
+
+105. 下列关于 BFD 单臂回声功能说法正确的有
+□BFD 单臂回声功能必须要配置本地标识符和远端标识符
+□BFD 单臂回声功能的协议报文默认的目的 IP 地址是 224.0.0.184
+□BFD 单臂回声功能适用于一台设备支持 BFD，另一台设备不支持的场景
+□BFD 单臂回声功能开启后，BFD 报文的目的 IP 和源 IP 一致
+
+室
+
+工
+
+答案：CD
+
+西
+
+小
+
+作
+
+106. 主流大二层技术有 VXLAN、TRILL、NVGRE 和 MPLS 等
+○正确
+○错误
+答案：A
+
+107. VXLAN 中的一个 BD 可以对应多个 VNI
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+1
+1
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+○正确
+○错误
+答案：B
+
+108. 要构建一个无环的二层网络，以下哪种方案最优？
+○堆叠+链路聚合
+○TRILL+MSTP
+○堆叠+MSTP
+○链路聚合+MSTP
+答案：A
+
+1
+1
+
+109. 缺省配置的交换机此时 MAC 地址表为空，连接于该交换机上的主机 A 发出了第一个
+单播数据帧，那么交换机收到该数据帧之后将会执行什么操作？
+○交换机会丢弃该数据帧
+○交换机会根据该数据帧的目标 MAC 地址将数据帧转发出某个接口
+○交换机会记录数据帧的源 MAC 地址并泛洪该数据帧
+○交换机会缓存该数据帧，等待目的主机发送数据帧后进行转发
+
+4
+5
+
+答案：C
+
+室
+
+110. 如图所示，三台交换机 SW1、SW2 和 SW3，其中 SW1 我根桥，SW1 和 SW2 之间
+发生了链路拥塞，SW2 收不到根桥发送的配置 BPDU，管理员需要配置哪种生成树保护机
+制来防止链路拥塞产生的问题？
+○环路保护
+○根保护
+○TC-BPDU 保护
+○BPDU 保护
+
+作
+
+西
+
+小
+
+0
+3
+群
+q
+q
+
+工
+
+答案：A
+
+111. 在 VLAN（802.1Q）数据封装里表示优先级字段的一共为 6bit
+○正确
+○错误
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+答案：B
+
+112. 四台路由器 R1、R2、R3、R4 运行了 ISIS，ISIS 路由器类型已标注，在 R1 上查看路
+由表，R1 没有到达 10.34.34.4 的路由的原因为
+
+○R2
+○R2
+○R3
+○R2
+
+0
+3
+群
+q
+q
+
+上配置路由策略过滤了缺省路由
+的 system-ID 与 R3 冲突
+和 R4 的区域规划错误
+的 system-ID 与 R1 冲突
+
+答案：C
+
+作
+
+室
+
+4
+5
+
+1
+1
+
+工
+
+113. OSPFv3 的 Option 字段出现所有 LSA 中
+○对
+○错
+
+西
+
+小
+
+答案：B
+
+114. 下列关于 OSPFv3 的 Link-LSA，说法正确的是？
+○Option 字段存在于 LSA 头部，而非 Link-lsa 的数据区
+○既包含本接口的链路本地地址，也包含本接口所有 IPv6 前缀
+○若 Link-LSA 的某个前缀的 Prefix Option 字段为 0x00，则该 Prefix 不会纳入 IPv6 单播
+计算
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+○既包含本接口的链路本地地址，也包含本路由器上同区域的所有 Ipv6 前缀
+答案：B
+
+115. 运行 BGP 的路由器会将哪种类型的前缀通告给自己的 IBGP 邻居(假设该路由器没有
+配置为路由反射器）？
+○前缀是通过 EBGP 邻居学习到的，或者前缀是从 RR 学习到的
+○前缀是通过其他 BGF 邻居学习到的，或者前缀在本地是通过 network 或者路由引入学习
+到的
+○前缀是通过其他 IBGP 邻居学习到的，或者前缀是从 EBGP 邻居学习到的，或者前缀是
+通过路由引入学习到的
+○存在于路由展中的前缀
+○前缀是通过 EBGP 邻居学习到的，或者前缀在本地是通过 network 或者路由引入学习到
+的
+答案：E
+
+4
+5
+
+0
+3
+群
+q
+q
+
+1
+1
+
+116. 如图所示，AS100 访间 AS400 有两条路径,默认情祝下从 AS200 传递过来的是最优路
+由,现在已知通过 AS300 去往 AS400 的路径带宽更优,因此在 R2 上作如下配置,配置完成
+后发现最优路由并没有发生改变,下面哪些操作能够使配置生效?
+[R2]ip as-path-filter 1 permit ^400$
+[R2]route-policy med permit node 10
+[R2-route-policy]if-match as-path-filter 1
+[R2-route-policy]apply cost 20
+
+室
+
+作
+
+西
+
+工
+
+小
+
+○在 R1 的 BGP 进程下配置 deterministic-med
+○在 R2 的 BGP 进程下配置 compare- different-as-med
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+○在 R2 的 BGP 进程下配置 deterministic-med
+○在 R1 的 BGP 进程下配置 compare- different-as-med
+答案：D
+
+117. 现有路由器 R1、路由器 R2、路由器 R3 和路由器 R4 组成的网络。这 4 台路由器通
+过一个 LAN 网络互连。 所有 4 台路由器都部署了基本的 OSPF。当你在路由器 R2 执行
+命令“display ospf peer”时,发现路由器 R2 和 路由器 R3 之间的状态为“2way”。那么从
+这个输出中，你能得出什么结论?
+□路由器 R4 是 DR
+□路由器 R2 是 DR 或者 BDR
+□路由器 R2 不是 DR
+□路由器 R3 不是 DR，也不是 BDR
+□路由器 R2 和路由器 R3 之间没有形成 full 邻接关系
+答案：CDE
+
+4
+5
+
+0
+3
+群
+q
+q
+
+1
+1
+
+118. 下面关于 NSSA 区域的说法正确的是
+○在 NSSA 区域内的 OSPF 邻居发送 hello 报文中，option 字段内的 N 位置 1,E 位置 0
+○NSSA 区域会生成七类 LSA 来通告外部路由,七类 LSA 中的 FA 地址作用是为了防止环
+路
+○NSSA 区域中一定会自动生成一条默认的 LSA 去访问外部网络
+○在 NSSA 区域内的 OSPF 邻居发送 he1lo 文中，option-字段内的 N 位置 0,E 位置 1
+
+工
+
+119. 在 命 令 aggregate ipv4-address { mask | mask-length } [ as-set | attribute-policy
+route-policy-name1 | detail-suppressed | origin-policy route-policy-name2 | suppress-policy
+route-policy-name3 ]中,多个参数可以用 来影响汇总路由及其结果。关于该命令描述正确的
+是?
+□如果配置了 Suppress policy 也会产生聚合路由，Route-policy 的 if-match 子句用来挑选
+抑制的明细路由， 匹配 Route-policy 的明细路由仍然会被通告给其他 BGP 邻居
+□如果配置了 Origin-policy 了,只有与 Route-policy 匹配的明细路由才能参加聚合
+□如果配置了 Attribute-policy,可以更改聚合路由的属性
+□如果配置了 As-set,汇总路由的 AS_ATH 包含所有具体路由的 AS 路径信息，以防止路由
+环路
+
+西
+
+小
+
+室
+
+作
+
+答案：A
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+答案：BCD
+120. 现有两个 Community-filter
+ip Community-filter 1 permit 100: 1 200:1
+ip community-filter 2 permit 100: 1
+ip Community-filter 2 permit 200:1
+关于上述 Community-filter 描述正确的是?
+□仅当 BGP 路由中携带的团体属性值包含
+□仅当 BGP 路由中携带的团体属性值包含
+□只要 BGP 路由中携带的团体属性值包含
+会匹配 community-filter1
+□只要 BGP 路由中携带的团体属性值包含
+会匹配 community-filter2
+
+100:1 和 200:1 时,该 BGP 路由才会匹配 2
+100:1 和 200:1 时,该 BGP 路由才会匹配 1
+100:1 或 200:1 或者两者全部,该 BGP 路由就
+100:1 或 200:1 或者两者全部,该 BGP 路由就
+
+答案：BD
+
+4
+5
+
+1
+1
+
+121. community-filter 有两种类型:基本团体属性过滤器和高级团体属性过滤器。以下哪个过
+滤工具使高级团 体属性过滤器比基本团休属性过滤更灵活？
+○ACL
+○Regular-expression
+○AS-path-filter
+○IP-prefix
+
+室
+
+答案：B
+
+作
+
+122. 命令 ip ip-prefix ip-prefix-name [ index index-number ] { permit | deny } ipv4-address
+mask-length [ match-network ] [ greater-equal greater-equal-value ] [ less-equal less-equal-value ]
+用于配置 ip-prefix-。如果一 条前缀列表的 1ess -equal-已经指定,但是 greater-equal4-没有
+指定，那么该前缀的范围是多少?
+○[mask-length ,less-equal-value]
+○[less-equal-value,32]
+○没有限制
+○[0, less-equal-value]
+
+西
+
+小
+
+0
+3
+群
+q
+q
+
+工
+
+答案：A
+
+123. 现有一台路由器的接口 Serial0 在 OSPF 去 1 中，并将接口 Serial0 设置为 Silent 接
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+口。那么该设置会带 来什么样的影响?
+○OSPF 不会通过该接口建立任何邻接关系
+○OSPF 不会将从该接口学习到的路由加入到本地路由表中
+○OSPF 会从邻居接收路由更新
+○OSPF 通过该接口建立可用的邻接关系
+答案：A
+
+124. 路由器 HW 使能了 OSPF 并且路由器 HW 的角色为 ABR,并配置了 abr -surmnary，那么
+哪些类 LSA 会被汇总?
+□4 类 LSA
+□5 类 LSA
+□2 类 LSA
+□1 类 LSA
+□3 类 LSA
+
+4
+5
+
+答案：CDE
+
+0
+3
+群
+q
+q
+
+1
+1
+
+125. ISIS 的 CSNP 报文与 OSPF 的 DD 报文都有在 MA 网络,描述链路状态数据库概要的作用,
+对比这两类报文下面哪些说法正确
+○两种报文发送后都需要对端路由器进行确认，否则需要重传
+○OSPFA 的 DD 报文交互中的主从关系,与 DR/BDR 无身份绑定，而 CSNP 报文只由 DIS 来产
+生
+○一旦邻接关系建立成功，CSNP 报文和 DD 报文就会停止发送
+○两种报文发送后都不需要对端路由器进行确认
+
+室
+
+西
+
+小
+
+作
+
+工
+
+答案：B
+
+126. 如果需要在本地 IP 路由表中不存在缺省路由的情况下，
+使用 default route-import 命令，
+就会向 BGP 对等体 (组)发布缺省路由,
+○正确
+○错误
+答案：B
+
+127. 哪种场景可以运用 AS-path -filter?
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+□Route-policy 中的 apply 子句
+□Route-policy 中的 if-match 子句
+□依据路由携带的 AS_PATH 属性,过滤向 BGP 邻居发送的路由。例如命令 peer x.x.x.x
+as-path-filter export
+□依据路由携带的 AS_PATH 属性,过滤向 BGP 邻居收到的路由。例如命令 peer x.x.x.x
+as-path-filter import
+答案：BCD
+
+128. 关于 BGP 的联盟，以下描述错误的是?
+○联盟将一个 AS 划分为若干个子 AS 联盟外部 AS 仍认为联盟是一个 AS。
+○联盟的子 AS 号，默认会通告给联盟以外的 BGP 对等体
+○联盟内子自治系统可以使用私有的 AS 号。华为 NE/AR 路由器，一个联盟最多可配置 32
+个子自治系统。
+○联盟可以很容易地检测到 AS 内的选路循环，因为子 As 之间运行的是 EBGP。
+
+4
+5
+
+答案：B
+
+0
+3
+群
+q
+q
+
+129. 以下关于 ISIS 的路由渗透描述正确的是?
+□ISIS 的路由渗透在 IPv6 环境下可以使用。
+□ISIS 的路由渗透不会引起邻居震荡。
+□ISIS 的路由渗透中,渗透前的路由不能是聚合路由。
+□ISIS 的路由渗透可以在 Level--1 级别的路由器上部署。
+□ISIS 的路由渗透是用来防止路由环路的。
+答案：AB
+
+西
+
+小
+
+作
+
+室
+
+工
+
+1
+1
+
+130. 路由器通过两条平行的线缆连接的两个 EBGP 邻居，你会采用什么方法以实现通过这两
+条平行 serial 线缆连接的两个 EBGP 邻居间的双向负载分担?
+○使 Loopback 用接口建立 EBGP 邻居关系并配置 EBGP Multi—hop，配置 Loopback 接口作
+为更新源，然后运用 IGP 以实现地址间的等价路径负载分担
+○不用采用任何方法，BGP 会自动在可用链路上实现流量在不同自治系统间的负载分担
+○在两端运用命令 ebgp-load-balance
+○配置以 Loopback 接口作为更新源的 EBGP 邻居关系,每个 AS 中的 IGP 需有两条到达 EBGP
+邻居环回口地址的等价路径，并且需要运用命令“next-hop-local”
+○配置以 Loopback 接口作为更新源的 EBGP 邻居关系,每个 AS 中的 IGP 需引入两条到达 EBGP
+邻居环回口地址的 等价路径，并且需要运用命令“ebgp-max-hop 和“next-hop-local
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+答案：A
+
+131. 路由器上同时运行了 OSPFv3 和 ISIS，需要把 OSPFv3 的路由引入到 ISIS，请问下述哪
+几种引入配置是正确的：
+□[Huawei] isis 1
+[Huawei-isis-1] is-level level-1
+[Huavvei-isis-1] network-entity 47.0001.0000.0000.0002.00
+[Huawei-isis-1] ipv6 enable topology standard
+[Huawei-isis-1] ipv6 import-route ospfv3 1 level-1
+[Huawei-isis-1] quit
+[Huawei] ospfv3 1
+[Huaweiospfv3-1] router-id 2.2.2.2
+
+1
+1
+
+□[Huawei] isis 1
+[Huawei-isis-1]is-level level-1
+[Huavvei-isis-1] network-entity 47.0001.0000.0000.0002.00 [Huawei-isis-1] ipv6 enable
+topology standard
+[Huawei-isis-1] ipv6 import-route ospfv3 1
+[Huawei-isis-1] quit
+[Huawei] ospfv3 1
+[Huawei-ospfv3-1] router-id 2.2.2.2
+
+4
+5
+
+室
+
+□[Huawei] isis 1
+[Huavvei-isis-1] network-entity 47.0001.0000.0000.0002.00 [Huawei-isis-1] ipv6 enable
+topology standard
+[Huawei-isis-1] ipv6 import-route ospfv3 1 level-1
+[Huawei-isis-1] quit
+[Huawei] ospfv3 1
+[Huaweiospfv3-1] router-id 2.2.2.2
+
+作
+
+西
+
+小
+
+0
+3
+群
+q
+q
+
+工
+
+□[Huawei] isis 1
+[Huavvei-isis-1] network-entity 47.0001.0000.0000.0002.00 [Huawei-isis-1] import-route
+ospfv3 1
+[Huawei-isis-1] quit
+[Huawei] ospfv3 1
+[Huawei-ospfv3-1] router-id 2.2.2.2
+□[Huawei] isis 1
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+[Huawei-isis-1]is-level level-1
+[Huavvei-isis-1] network-entity 47.0001.0000.0000.0002.00 [Huawei-isis-1] import-route
+ospfv3 1 level-1
+[Huawei-isis-1]quit
+[Huawei] ospfv3 1
+[Huawei ospfv3-1] router-id 2.2.2.2
+答案：AC
+
+132. 如果路由器只需要转发 IPv6 数据包，那么在该路由器上不需要配置任何 IPv4 的协议和
+地址。
+○正确
+○错误
+答案：A
+
+4
+5
+
+0
+3
+群
+q
+q
+
+1
+1
+
+133. 以下关于 LDP 协议会话建立过程，描述正确的是?
+□TCP 连接建立成功后，由主动方发送初始化消息,协商建立 LDP 会话的相关参数。
+□传输地址较大的一方作为主动方，发起建立 TCP 连接。
+□LDP 邻居发现的 Hello 消息使用 TCP 报文，目的地址是组播地址 224.0.0.2
+□当双方都收到对端的 Keepalive 消息后，LDP 会话建立成功。
+
+室
+
+答案：ABD
+
+作
+
+134. 路由器 HW1 作为 MPLS LSR 路由器存在于运营商 HW 的网络中。该路由器收到一个携
+带标签的报文,但是该 标签表项没有存在于它的 LFIB 中。那么该路由器如何处理该报文?
+○路由器 HW1 会运用 LDP 来创建一条 LSP 并在 LFIB 中为报文中携带的标签创建新的路径
+○路由器 HW1 会丢弃该报文
+○路由器 HW1 会使用默认标签转发该报文
+○路由器 HW1 会剥离标签，并查找 FIB 使用 IP 目的地址
+
+西
+
+小
+
+工
+
+答案：B
+
+135. 如 果 一 个 组 播 组 中 存 在 多 个 接 收 者 , 管 理 员 在 连 接 接 收 者 的 交 换 机 上 开 启
+IGMP-Snooping 功能，当接收者从交换机收到了查询器的普遍组查询报文后,多个接收者该如
+何回应?
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+○所有接收者都会回应 Report 报文。
+○只有运行了 IGMPv1 ，所有接收者才回应 Report 报文。
+○第一个响应时间超时的接收者发送 Report 报文，其他接收者不发送。
+○只有运行了 IGMPV2，所有接收者才回应 Report 报文。
+答案：A
+
+136. 下列对于 PIM-SM 中源端 DR 向 RP 注册的过程描述正确的是哪项?
+○注册报文中封装的是组播业务数据。
+○RP 一旦收到注册消息就发送注册停止报文。
+○注册报文用于构建源端 DR 与 RP 之间的 RPT 树。
+○注册报文是组播报文。
+答案：A
+
+137. 在共享网络中，PIM-SM 采用哪种机制用来防止重复的流量?
+○Register 机制
+○BSR/RP 机制
+○Assert 机制
+○Join/Prune 机制
+答案：C
+
+室
+
+作
+
+0
+3
+群
+q
+q
+
+138. 下列关于 802.1x 认证、 RADIUS 和 HWTACACS 认证说法正确是哪些?
+□RADIUS 认证和 HWTACACS 认证可以同时对同一用户进行双重认证,更加安全。
+□用户可以使用 802.1x 认证方式接入网络，通过 Radius 完成身份认证。
+□RADIUS 认证和 HWTACACS 认证互斥，不能对同一用户同时进行双重认证。
+□RADIUS 认证与 802.1x 认证互斥。
+
+西
+
+小
+
+4
+5
+
+1
+1
+
+工
+
+答案：BC
+
+139. 下列关于 RADIUS 说法正确的是哪项?
+○MAC 认证不需要用户名密码，所以不能使用 RADIUS 认证用户身份。
+○RADIUS 认证和 Portal 认证不能结合使用,因为通常在部署 Portal 认证时，可以使用 Portal
+服务器认证用户身份。
+○RADIUS 协议认证、授权及审计分离。
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+○RADIUS 支持有线和无线两种接入方式。
+答案：D
+
+140. 为了配置 AAA，首先需要 XRADIUS RADIUSA 服务器的定义方式如下:
+[Huawei ]radius-server template EXAM
+[Huawei-radius-EXAM]radius- server shared-key cipher HUAwei123
+[Huawei-radius-EXAMJradius- server authentication 10.7.66.66 1812
+[Huawei-radius-EXAMJradius- server authorization 10.7.66.661812
+[Huawei radius -EXAM]radius-server retransmit 27. 1813
+[Huawei-radius-EXAM]radius- server accounting 10
+○正确
+○错误
+答案：B
+
+4
+5
+
+0
+3
+群
+q
+q
+
+1
+1
+
+141. 网络管理人员在流量监管中可以使用 CAR 技术。下面哪些技术可以在 CAR 中进行应用
+□双桶双速
+□单桶单速
+□三桶单速
+□双桶单速
+
+室
+
+答案：ABD
+
+作
+
+142. 路由器 A 有目的网段为 10.0.0.1/32 的 IP 路由亲目，出接口为 Gigabitethernet0/0/1。现
+在增加如下配置
+acl number 2000
+rule 10 permit source 10. 0.1.1 0
+traffic classifier test
+if-match acl 2000
+traffic behavior test
+remark dscp cs3
+traffic policy test
+classifier test behavior test
+interface Gigabitethernet0/0/1
+ip address10.0.12.1255.255.255.0
+traffic-policy test outbound
+
+西
+
+小
+
+工
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+假设路由器 A 收到了目的 IP 为 10.0.0.1 的数据包,下列说法中正确的有:
+□如果数据包源 IP 地址为 10.0.1.2,则可以被转发,同时 DSCP 字段保持不变
+□如果数据包源 IP 地址为 10.0.1.2,则可以被转发,同时 DSCP 字段标记为 CS3
+□如果数据包源 P 地址为 10.0.1.2,则不能被转发
+□如果数据包源 IP 地址为 10.0.1.1,则可以被转发,同时 DSCP 字段标记为 cS3
+答案：AD
+
+143. 不间断转发 NSF(Non-Stopping- Forwarding)和不间断路由 NSR（Non-Stopping Routing)是
+高可靠性的两个解决方案,下列说法中正确的有
+□NSR 路由器之间需要通过特定报文协商支持 NSR 的能力
+□开启 NSF 之后,路由器主备倒换,路由表和转发表保持不变,所以在 GR 时间内,流量不会丢失
+□NSR 使能后,如果业务批量备份尚未结束时,发生了主控板故障,则无法完成 NR 倒换
+□NSF 路由器之间不需要通过特定报文协商支持 NSF 的能力
+答案：BC
+
+4
+5
+
+0
+3
+群
+q
+q
+
+1
+1
+
+144. 如下所示,R1、R2 建立 E-BGP 邻居,并且开启 BFD 检测功能,下列说法正确的是
+
+室
+
+作
+
+西
+
+工
+
+小
+
+○R2 的 BFD 报文的检测时间为 800ms
+○R2 的 BFD 报文的检测时间为 600ms
+○R1 的 BD 报文的检测时间为 660ms
+○R1 的 BFD 报文的检测时间为 1280ms
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+答案：C
+
+145. 以下关于 IPv6 Over VXLAN 说法错误的是?
+○IPv6 over VXLAN 是指 Vxlan 的 Overlay 网络是 IPv6 网络
+○IPv6 over VXLAN 能够为终端租户解决 IP 地址资源不足的问题。
+○VXLAN 二三层网关之间的隧道是 IPv4 网络。
+○IPv6 Over VXLAN 不会生成表项。
+答案：D
+
+146. 以下关于 EVPN Type5 类路由说法错误的是?
+○IP Prefix 字段既可以携带主机 IP 地址,也可以携带网段地址。
+○Type5 是 IP 前缀路由。
+○Type5 路由同时携带二层 VNI 和三层 VNI
+○Type5 路由携带三层 VNI。
+答案：C
+
+0
+3
+群
+q
+q
+
+147. VXLAN 使用 BGP EVPN 建立隧道,使用哪类报文?
+○Type3
+○Type5
+○Type4
+○Type2
+○Type1
+
+室
+
+工
+
+答案：A
+
+西
+
+小
+
+作
+
+4
+5
+
+148. BGP EVPN 支持以下哪些高级功能?
+□ARP 广播抑制
+□VRRP over VXLAN
+□多活网关
+□VXLAN Qos
+答案：AC
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+1
+1
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+149. 以下对 VXLAN 报文说法正确的是?
+□外层目的 IP 地址是 VXLAN 隧道远端 VTEP 的 IP 地址
+□源 UDP 端口号是 4789
+□目的 UDP 端口号是 4789
+□VNI 有 24 比特,用于区分 VLAN 段
+答案：ACD
+
+150. BGP EVPN 分布式网关场景下实现虚拟机迁移，需要以下哪类报文实现？
+○Type3
+○Type5
+○Type4
+○Type2
+○Type1
+
+4
+5
+
+答案：D
+
+0
+3
+群
+q
+q
+
+1
+1
+
+151. 关于 VRRP 协议下列说法正确的由
+○VRRPv2 和 VRRP v3 都支持认证
+○VRRPv3 不支持认证功能，而 VRRPv2 支持认证功能
+○VRRPv2 仅适用于 IPv4 网络，VRRPv3 仅适用于 IPv6 网络
+○Mater IP 地址的拥有者 VRRP 优先级为 255，所以可以配置的优先级范围是 0-254
+
+工
+
+152. HW 用户正在通过 TFTP 传输非常多的文件 TFTP 依靠什么协议进行传输?
+○ICMP 和 UDP
+○P 和 TCP
+○UDP
+○NFS
+○FTP
+
+西
+
+小
+
+室
+
+作
+
+答案：B
+
+答案：C
+
+153. 当部署 LLQ 时需配置带宽参数,带宽参数有何意义?
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+○提供一个内置的策略器来限制在拥塞的时候低延迟队列最大的可用带宽
+○该参数应尽可能的小。它表示带宽始终保留,即使设用使用 LLQ,该参数也会减少接口的可
+用带宽
+○它表示参考 CR 来计算内置策略器合牌桶的突发尺寸
+○该参数是一个可选项,因为 LLQ 始终优先于其他队列
+答案：A
+
+154. 下面关于 Ipsec 中安全联盟 SA 的说法错误的是
+○SA 由一个三元组来唯一标识,这个三元组包括安全参数素引 SP( Security Parameter Index)、
+源 IP 地址和使用 的安全协议号（AH 或 ESP)
+○使用 display ipsec 命可以查看到与另一个 PSec 对等体之间所采用的加密算法,感兴趣流量
+等信息。
+○IPSec 只支持用对称加密算法来对数据进行加密。
+○IPSec 对等体之间必须存在双向的 SA 才能建立 Ipsec VPN 连接
+
+4
+5
+
+答案：A
+
+0
+3
+群
+q
+q
+
+1
+1
+
+155. 路由器 HW1 和路由器 HW2 分别连接网络 A 和网络 B。如下图所示，如果你希望在路
+由器 HW1 和路由器 HW2 之间建立 IPsec VPN。
+路由器 HW1 需要配置哪个 ACL 以使发送的 LAN 到 LAN 的流量通过加密的 VPN 隧道?
+
+室
+
+作
+
+西
+
+小
+
+工
+
+○rule permit ip source 192.168.1.10 destination 192.168.1.2 0
+○rule permit ip source 10.1.1.0 0.0.0.255 destination 192.168.1.2 0
+○rule permit ip source 10.1.1.0 0.0.0.255 destination 10.1.2.0 0.0.0.255
+○rule permit ip source 192.168.1.10 destination 10.1.2.0 0.0.0.255
+○rule permit ip source 10.1.2.0 0.0.0.255 destination 10.1.1.0 0.0.0.255
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+答案：C
+
+156. 下列选项中对于断言机制描述正确的是哪项?
+○winner 的选举过程中不会将 IP 地址大小作为选举的条件。
+○断言机制中 winner 负责向广播网段转发组播数据。
+○断言机制用于 DR 的选举。
+○断言机制中 loser shut down 与广播网络相连的接口。
+答案：B
+
+157. 下面关于 BSR 机制描述正确的是
+□PIM-SM 域中可以有多个 C-BSR，但是只能选举出一个 BSR
+□BSR 通过接收到的 C-RP 数据包来收集 C-RP 信息
+□BSR 通过泛洪 Bootstrap 报文来向 PIM-SM 域中所有的路由器通告 BSR 信息和 C-RP 信息
+□一个 C-BSR 也可以通过接收到的 C-RP 数据包来收集 C-RP 信息
+
+4
+5
+
+答案：ABC
+
+0
+3
+群
+q
+q
+
+1
+1
+
+158. LDP 和 IGP 联动是指通过 IGP 抑制可达路由的发布，来保证 LDP 和 IGP 联动完成网络收
+敛，使得 IGP 和 LDP 保 持路径一致，最大限度减少流量的丢失，提高整网的可靠性
+○正确
+○错误
+
+工
+
+159. 关于 MPLS 对 TTL 的处理模式，以下描述正确的是？
+○Pipe 模式下，IP 报文经过 MPLS 网络时，在入节点，IP TTL 减 1 映射到 MPLS TTL 字段
+○MPLS 标签的 TTL，其含义与 IP 头中的 TTL 作用相同，可以防止 MPLS 网络产生路由环路
+○Uniform 模拟下，IP 报文经过 MPLS 网络时，在入节点 IP TTL 减 1，MPLS TTL 字段为固定
+值
+○在 MPLS VPN 中，如需隐藏 MPLS 骨干网络的结构，对于私网报文可以在 Ingress 使用
+uniform 模式
+
+西
+
+小
+
+室
+
+作
+
+答案：A
+
+答案：B
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+160. 在 MPLS VPN 的网络中，不同 CE 设备可以使用不同的路由协议与同一 PE 设备交换路由
+信息，不同 CE 设备 与同一设备之间使用的路由协议彼此独立
+○正确
+○错误
+答案：A
+
+161. 下列哪些技术使用了隧道技术实现 IPv6 地址之间的通信？
+□Dual Stack
+□6to4
+□ISATAP
+□NAT64
+答案：BC
+
+4
+5
+
+1
+1
+
+162. 两台路由器之间运行 BGP 4+，邻居关系正常，但是本端路由器的 BGP 路由表没有邻居
+的路由条目，以下可能的原因是？
+□对端 BGP 路由表的路由条目为非最优
+□BGP 路由条目的下一跳地址不可达
+□对端配置了 Peer ignore
+□对端配置了 Active-route-advertise
+
+室
+
+答案：AD
+
+作
+
+163. 在一个基本的网络层数据包中，可以包含下面哪些信息?
+□数据链路层头部
+□上层数据
+□网络层头部
+□路径记录
+□网络层尾部
+
+西
+
+小
+
+0
+3
+群
+q
+q
+
+工
+
+答案：BC
+
+164. 关于配置 BGP4+的描述正确的是：
+□BGP4+的 Router-ID 与 BGP4 的 Router-ID 一致。
+□BGP4+指定 peer 的时候必须使用 Link-Local 地址
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+□BGP4+路由的下一跳不用 Link-Local 地址。
+□BGP4+配置反射器的时候，反射器与客户端的角色定位需要与 BGP4 的配置一致。
+□BGP4+不支持路由反射器。
+答案：AC
+
+165. OSPF stub 区域中肯定不会存在类型的 LSA
+□Type-7
+□Type-5
+□Type-4
+□Type-3
+答案：ABC
+
+1
+1
+
+166. 现有一台运行 OSPF 的路由器连接到区域 0 和区域 1。你将区域 1 配置成了 Stub 区域。
+只在区域 1 内部操作的 LSA 包含哪几类?
+○7 类 LSA
+○1 类 LSA 和 2 类 LSA
+○1 类 LSA，2 类 LSA 和 5 类 LSA
+○3 类 LSA 和 4 类 LSA
+○1 类 LSA，2 类 LSA 和 3 类 LSA
+
+4
+5
+
+室
+
+答案：E
+
+作
+
+167. 某工程师在公司某网络中的 OSPF 路由器上执行了引入操作，以下关于引入路由 LSA 的
+说法正确的是？
+□Advertising Route 被设置为 ASBR 的 router-id
+□netmask 设置为 0
+□link state id 被设置为目的网段地址
+□使用 link state id 和 advertising Router 可以唯一标识一条 LSA
+
+西
+
+小
+
+0
+3
+群
+q
+q
+
+工
+
+答案：AC
+
+168. 下列关于 ISS 协议路由聚合说法正确的有
+○路由聚合在所有类型路由器上面都可以配置并生效
+○路由聚合只能在 level--1 路由器上配置才能生效
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+○路由聚合只能在 level--2 路由器上配置才能生效
+○路由聚合只能在 level--1-2 路由器上配置才能生效
+答案：A
+
+169. ISIS 在邻居建立过程中，在 P2P 网络类型下不会发送 CSNP 报文
+○正确
+○错误
+答案：B
+
+170. OSPFv3 的 Router-LSA 每台路由器都会产生，描述了路由器各链路的接口地址和花费，
+同时还包含了邻居路由器的 Router ID
+○正确
+○错误
+
+4
+5
+
+答案：B
+
+0
+3
+群
+q
+q
+
+1
+1
+
+171. 以下关于 ISS 的 GR 描述正确的是?
+○ISIS 的 GR 特性默认开启。
+○ISIS 的 GR 一共有四个定时器。
+○ISIS 的 GR 通过 CSNP 报文来通知事件和维持邻居关系
+○ISIS 的 GR 定义了全新的 TLV 结构来支持该特性。
+答案：D
+
+西
+
+小
+
+作
+
+室
+
+工
+
+172. 关于路由引入，下列描述错误的是？
+○bgp 生成路由时支持 import 和 Network 两种方式, Network 方式更精确
+○缺省情况下,OSPF 引入外部路由的缺省度量值为 1,引入的外部路由类型为 Type2
+○isis 的 level-2 network 路由向 level-1 做路由引入后,如果不手动配置引入策略,则会形成路
+由环路。
+○在 OSPF 中引入 IBGP 路由可能会引起路由环路
+答案：C
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+173. 现有 Route-policy 如下：
+○仅当 BGP 路由携带团体属性值为 100:1 或者 AS_PATH 为 100 时，该 BGP 路由会匹配上
+面的 route-policy。匹配路由的 AS-PATH 属性会被改为 200
+○仅当 BGP 路由携带团体属性值为 100:1 且 AS- PATH 为 100 时，该 BGP 路由会匹配上面
+的 route-policy。
+匹配路由的 AS_PATH 属性会被改为 200
+○仅当 BGP 路由携带 AS-PATH 为 100，该 BGP 路由会匹配上面的 route-policy。匹配路由的
+AS_PATH 属性会被改为 200
+○只要 BGP 路由携带团体属性值为 100:1 时，该 BGP 路由会匹配上面的 route-policy。匹
+配路由的 AS_PATH 属性会被改为 200
+答案：B
+
+174. 在 ISIS 的广播网络数据库同步过程中，以下说法正确的是?
+
+4
+5
+
+○R2
+○R2
+○R2
+○R1
+
+室
+
+作为 DIS，会周期性发送 CSNP。
+作为 DIS，Hello 时间为普通路由器的 3 倍。
+作为 DIS 不会接收其它路由的 PSNP 请求。
+和 R3 通过周期性的发送 PSNP 请求来维持数据库一致。
+
+西
+
+作
+
+工
+
+答案：A
+
+小
+
+0
+3
+群
+q
+q
+
+1
+1
+
+175. 某公司二层网络架构如图，当工程师配置完成后发现部门之间业务无法通信，通过命
+令查看设备状态如下，请判断可能的原因如下
+□交换机之间的 Revision Level 配置不一致
+□交换机之间的 BPDU 间隔时间配置不一致
+□交换机之间的 Region Name 配置不一致
+□交换机之间的 Instance VLAN 映射配置不一致
+答案：ACD
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+176. 两台路由器，通过串行口连接在一起，但是互联接口无法 ping 通，现在查看端口状态
+○链路带宽不够
+○IP 地址不在同一网段
+○链路层协议不一致
+○子网掩码不匹配
+答案：C
+
+177. 当 DLDP 探测到光纤中单向链路存在时，华为设备的默认操作包括：DLDP 状态机迁移
+到 Disable 状态；输出 Trap 信息；自动将接口设为堵塞状态。
+○正确
+○错误
+答案：A
+
+0
+3
+群
+q
+q
+
+178. RSTP 比 STP 收敛速度快的主要原因是什么?
+○RSTP 增加了端口状态的种类
+○RSTP 有更小的开销
+○RSTP 不基于定时器收敛
+○RSTP 有更小的计时器
+答案：C
+
+工
+
+179. 以下关于跨域 VPN–Option C 的特点,描述正确的是?
+□报文转发过程中最多需要使用两层标签。
+□ASBR 上不保存 VPNV4 路由,相互之间也不通告 VPNv4 路由
+□VPN 路由在入口 PE 和出口 PE 之间直接交换,不需要中间设备保存和通告 VPN 路由。
+□跨域 VPN–Option-c 方式不适合在跨越多个 AS 时使用。
+
+西
+
+小
+
+作
+
+室
+
+4
+5
+
+1
+1
+
+答案：BC
+
+180. 如果在组播网络中运行了 PM-SM 协议,则需要配置 RP,RP 的配置方式分为动态 RP 和静
+态 RP,下列对于 RP 的 配置描述正确的是
+○配置动态 RP 时,需要配置 BSR 作为 RP 的备份。
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+○配置静态 RP 时,需要配置 BSR 通告 RP 信息。
+○配置静态 BP 时,需要在所有 PIM 路由器上指定 RP 的信息。
+○配置动态 RP 时,不需要配置 BSR。
+答案：C
+
+181. 在组播网络中，什么情况会导致组播流量不能正常转发?
+□路由器没有 RPF 路由
+□在 RPF 接口上没有使能 PIM
+□上游路由器将收到的 PIM Join 消息丢弃
+□多路由器出口网络，本路由器不是 DR
+答案：ABC
+
+182. IPSG 可以配置静态绑定表，或者通过 DHCP-snooping 配合使用形成绑定表
+○正确
+○错误
+
+4
+5
+
+答案：A
+
+0
+3
+群
+q
+q
+
+1
+1
+
+183.路由器负载分担分支网络 1 和分支网络 2 之间通信流量,此种情况下,在路由器物理接口
+下配置 URPP 防范源 P 地址欺骗攻击必须使用松散模式。
+○正确
+○错误
+
+室
+
+西
+
+小
+
+作
+
+工
+
+答案：A
+
+184. 以下关于数字证书说法错误的是？
+○数字签名保障数字证书的完整性。
+○数字证书包含公钥信息。
+○当收到的对等体证书在有效期内,但设备自身时间错误且不在证书有效期内,认证失败。
+○两个 PRI 实体即使不在同一 CA 系统中,只要双方能够识别对方 CA,也可以完成身份验证。
+答案：D
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+185. 在新部署的路由器 HW 上配置了 WRED。下面关于 WRED 特性描述正确的是?
+□WRED 可以针对不同优先级的数据包设置不同的丢弃门限和丢包率
+□当流量超过最小阀值时，WRED 开始丢弃所有入口流量（尾丢弃）
+□通过选择性丢弃多 TCP 流以避免全局同步
+□低带宽的流量比高带宽的流量更容易丢弃
+答案：AC
+
+186. 关于 FTP 协议,下面的描述中哪个是正确的?
+○在 FTP Passive 模式中,客户端完成控制和数据的 TCP 会话的初始化
+○在 FTP Active 模式中,服务器端通过命令“PORT 来告诉客户端它期望用哪个端口发送数据
+○FTP 永远使用一个 TCP 会话传输控制信息和数据信息
+○FTP 永远使用 TCP 端口 20 来建立数据会话,使用 ICP 端口 21 来建立控制
+会话 E.FTP 永远使用 TCP 端口 21 来建立数据会话,使用 TCP 端口 20 来建立控制会话
+答案：A
+
+4
+5
+
+0
+3
+群
+q
+q
+
+1
+1
+
+187. 实验室网络中按如下拓扑搭建网络，SW1 为默认配置，SW2 禁用 STP 功能，该场景描
+述正确的是
+○Sw1 的 G0/0/2 进入 Discarding 状态
+○sw2 的 G0/0/1 进入 Discarding 状态
+○sw2 的 G0/0/2 进入 Discarding 状态
+○没有接口被阻塞
+○SW1 的 G0/0/1 进入 Discarding 状态
+答案：D
+
+西
+
+小
+
+室
+
+作
+
+工
+
+188. 下面哪些是运用在以太网中的?
+□非规范格式的 MAC 地址
+□多路访问中的 CSMA/CD
+□规范格式的 MAC 地址
+□802.5 封装的帧
+□802.3 封装的帧
+答案：BCE
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+189. 在判断 LSA 新旧时,会用到序列号参数和 age 参数,下面关于这两个参数说法正确的是?
+○当路由器收到一条 LSA 的 age 置为 360s,说明这条 LSA 不可用
+○序列号和 age 参数都可以判断 LSA 新旧,路由器优先比较 sequence 参数，越大越优
+○当路由器收到两条 LSA,其中序列号相同,校验和相同,age 越小越优
+○如果 LSA 的序列号到达结束值 0x7FFF，当前路由器通告 age 为 3600s 的 lsa
+答案：C
+
+190. ISIS 协议在广播型网络和 P2P 网络中,当路由器收到 LSP 时,都需要使用 PSNP 进行确认,
+保证 LSDB 的同步
+○正确
+○错误
+答案：B
+
+4
+5
+
+1
+1
+
+191. 下列关于 ISIS 协议 LSP 报文的属性的说法正确的有
+□LSP 快速扩散特性,先将小于指定数目的 LSP 扩散出去,加快 LSDB 的同步过程
+□通过配置 LSP 生成的智能定时器,该定时器可以根据路由信息的变化频率自动调整延迟时
+间
+□当链路状态信息增多时,可以增大 SP 的报文长度,使得每个 LSP 可以携带更多的信息。
+□减小接口发送 LSP 的最小时间间隔可以加快 LSP 扩散速度
+
+室
+
+答案：AB
+
+作
+
+192. 路由器 R1 和路由器 R2 运行 BGP。这两台路由器都在 AS 65234 中。路由器 R2 的路
+由存在于路 由器 R1 的 BGP 路由表中，但是没有在路由器 R1 的 IP 路由表中。
+那么什么原因导致了该问题发生?
+○同步被关闭
+○BGP 邻居关系为 Down
+○路由器 R1 没有使能 BGP Multi-hop
+○路由不是最优的
+
+西
+
+小
+
+0
+3
+群
+q
+q
+
+工
+
+答案：D
+
+193. 关于 R2 路由条目说法正确的是？
+□2020::/64 路由器会出现在 IP 路由表当中
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+□2022::/64 路由器会出现在 IP 路由表当中
+□2019::/64 路由器会出现在 IP 路由表当中
+□2021::/64 路由器会出现在 IP 路由表当中
+答案：ABC
+
+194. 关于 OSPFv3 协议，以下描述错误的是？
+○在共享一台路由器的情况下，各 OSPFv3 进程独立运行
+○同一个接口下的同一个 OSPFv3 进程中，可以运行多个实例
+○支持单链路运行多个实例
+○OSPFv3 报文头部中包含 Instance ID 字段
+答案：B
+
+1
+1
+
+195. 下列关于 OSPFv33 的 LSA,说法正确的是
+□Inter-Area Prefix-LSA 的 Link State id,包含的是前缀信息
+□Router-LSA 和 Network-LsA 不包含路由信息
+□当 Intra-Area Prefix LSA 的 Referenced Link State Type-2 时, Referenced Link State id 包含的
+是 DR 的 接口 id
+□Inter-Area-Prefix LSA 也含有 Link-Local 信息
+
+4
+5
+
+答案：BC
+
+室
+
+作
+
+196. 某公司搭建了 OSPF 网络如下图，链路都形成了 OSPF 邻居关系，所有设备都宣告了自
+身环回口地址，某一天 S1-R2、S2-R1 链路出现故障，以下描述正确的是？
+□R5 能够正常学习到 R2 的环回口路由
+□R3 不能学习到 R2 的环回口路由
+□R1 能够正常学习到 R2 的环回口路由
+□R3 能够正常学习到 R2 的环回口路由
+
+西
+
+小
+
+0
+3
+群
+q
+q
+
+工
+
+答案：AB
+
+197. 以下关于 BGP4+的相关信息,描述正确的是?
+□Bgp4+可以使用 dampening 命合对 IBGP 路由进行荡抑制。
+□修改 BCP 的 Router ID 会导致路由器之间的 BGP 连接重新建立。
+□BCP4+中的 Next Hop 属性用 Pv6 地址来表示,可以是下一跳的链路本地地址。
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+□BGP4+不支持路由自动聚合。
+答案：ABD
+
+198. 以下关于 OSPF 虚链路描述正确的是?
+○虚连接可以建立在任何区域中,建立后它自身也属于该区域
+○虚链路使用出接口 P 作为链接地址
+○虚链路可以用来解决区域 0 被分割的问题
+○虚连接的 cost 为,是最优链路
+答案：C
+
+199. 不划分区域的情况下,下面关于链路状态路由协议描述正确的是?
+□每台路由器都建立一个整个泛洪域的拓扑结构
+□每台路由器直接从路由更新中学习路由并添加到路由表中
+□泛洪域中的路由器可能会重复收到同一个链路状态信息
+□整个泛洪域中的路由器都拥有相同的错路状态数据库
+□路由器会将一个邻居传来的所有错路状态信息发送给所有其他邻居,保证数据库的同步
+
+4
+5
+
+答案：ACD
+
+室
+
+0
+3
+群
+q
+q
+
+1
+1
+
+200. 如果网络中运行 OSPF 协议,将 OSPP 区域中的非骨干区域配置为 Totally Stub Totally Stub
+区域下发条 ls-id 为 0.0.0.0 的 LSA,该条 LSA 于哪类 LSA?
+○LSA5
+○LSA2
+○LSA1
+○LSA3
+
+作
+
+西
+
+小
+
+工
+
+答案：D
+
+201. 管理员在运维时希望对路由器上的某些路由进行管理,则下列哪些工具可以将这些路由
+标记出来,以便于管 理员配置策略?
+□如果运行了 BGP 协议,使用 community 属性标记路由
+□使用 ACL 在路由器上标记路由。
+□使用 Tag 值在路由器上标记路由。
+□使用 ip-prefix 在路由器上标记路由。
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+答案：AC
+
+202. 下面关于 IBGP 邻居和 EBGP 邻居描述正确的是?
+□路由器会将从它的 IBGP 邻居学习到的 BGP 更新发送给自己其他的 IBGP 邻居和 EBGP 邻
+居
+□路由器会将从它的 EBGP 邻居学习到的 BGP 更新发送给自己其他的 IBGP 邻居和 EBGP 邻
+居
+□IBGP 邻居必须直连。否则，IBGP-Multi-hop 必须配置
+□EBGP 邻居必须直连。否则，EBGP-Multi-hop 必须配置
+□IBGP 邻居可以通过 Loopback 接口建立邻居关系
+□EBGP 邻居必领通过直连物理接口地址建立邻居关系
+答案：BDE
+
+4
+5
+
+1
+1
+
+203. 在 MPLS-BGP-VPN 环境中，如果只通过 BGP、LDP 分发标签，那么报文的 MPLS 标签最
+多两层标签
+○正确
+○错误
+答案：B
+
+室
+
+0
+3
+群
+q
+q
+
+204. 关于跨域 VPN Option-B 方案，以下描述错误的是？
+○报文转发过程中,在两个 ASBR 上要对 VPN 的私网 LSP 做一次交换。
+○两个 ASBR 之间需建立 MP-EBGP 邻居关系。
+○跨域 VPN-option-B 方案不受 ASBR 之间互连链路数目的限制。
+○两个 ASBR 之间对 VPNv4 路由交换外层标签。
+
+作
+
+西
+
+小
+
+工
+
+答案：D
+
+205. 华为两台交换机 SWA、SWB 通过 7 根以太网连接在一起,并配置了静态链路聚合,交换机
+SW 上 对 应 端 口 为 Ethernet1/0/2 、 Ethernet1/0/3 、 Ethernet1/0/4 、 Ethernet1/0/5 、
+Ethernet1/0/6、 Ethernet1/0/7,配置 方式为按照端口顺序依次配置如果交换机 SWA、SWB
+每个聚合组只支持 6 个端口。
+○在各端口配置一致的情况下, Ethernet1/0/7 Unselected 端口
+○在各端口配置一致的情况下, Ethernet1/0/6 Unselected 端口
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+○在各端口配置一致的情况下,SWA 在 7 个端口中随机选择一个端口为聚合组 Unselected 端
+口
+○在各端口配置一致的情况下, Ethernet1/0/1 Unselected 端口
+答案：A
+
+206. 你需要在路由器上配置策略路由以指定特定流量通过某个接口进行转发。
+当运用基于策略的路由时，哪两类最典型的信息可以用来使流量沿特定路径转发?
+○数据包的 TTL 和源 IP 地址
+○源 IP 地址和二层源地址
+○源 IP 地址和特定协议（比如 FTP、HTTP 等）
+○服务类型报头和报文长度
+答案：C
+
+4
+5
+
+1
+1
+
+207. 如图所示，R1 与 R2 之间的 ISIS 邻居关系刚刚建立，R1 与 R2 之间的数据库同步过
+程以下说法正确的 是?
+○R1 发送给 R2 的报文为 PSNP 报文。
+○R1 发送给 R2 的报文为 CSNP 报文。
+○R1 发送给 R2 的报文为 LSP 报文。
+○R1 发送给 R2 的报文为 Hello 报文。
+
+室
+
+答案：B
+
+作
+
+208. 用什么命可以防止用户在交换机的接入端口上通过 HUB 接入多个设备?
+○[Huawei]interface GigabitEthernet 0/0/1
+[Huawei-GigabitEthernetO/0/1]port link type trunk
+[Huawei-GigabitEtherneto/0/1]port trunk allow pass vlan 10
+○[Huaweiinterface GigabitEthernet 0/0/1
+[Huawei-GigabitEthernetO/0/1]port link type access
+[Huawei GigabitEtherneto/0/jipsg enable
+○[Huawei]interface GigabitEthernet 0/0/1
+[Huawei-GigabitEthernet0/O ]port link-type access
+[Huawei-GigabitEthernet0/O ]port-security enable
+
+西
+
+小
+
+0
+3
+群
+q
+q
+
+工
+
+○[Huawei]interface GigabitEthernet 0/0/1
+[Huawei-GigabitEthernet0/O ]port link-type access
+[Huawei-GigabitEthernet0/O ]port-isolate enable
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+答案：C
+
+209. 为了查看路由器 R1 的路由表，在路由""R1 上执行命令“display ip routing-table"。路
+由器 R1 运行 OSPF 协议。
+下面关于路由表中 OSPF 信息描述正确的是?
+○在路由表中，用“O_ASE”标示符标识的路由表项说明该表项是通过 1 类 LSA 或者 2 类
+LSA 学习到的
+○在路由表中，用“O_ASE”标示符标识的路由表项说明该表项只能是通过路由引入学习到
+的
+○在路由表中，用“O_IA”标示符标识的路由表项说明是区域内部路由
+○在路由表中，用“OSPF”
+，标示符标识的路由表项是通过从其他进程引入到 OSPF 的 7 类
+LSA 学习到的
+○在路由表中，所有类型 LSA 都对应唯一的目的地址
+答案：B
+
+4
+5
+
+0
+3
+群
+q
+q
+
+1
+1
+
+210. 关于 ISIS 协议的认证，正确的说法有
+□接口认证可以实现对 Level-1 和 Level-2 的 hello 报文认证
+□配置接口认证之后，路由器发出的 IIH 一定携带认证 TLV
+□配置区域认证之后，路由器发出的 IIH、SNP、LSP 一定携带认证
+□两台路由器分别配置区域认证和接口认证，密码一致，那么两台路由器可以建立邻居关系
+答案：AB
+
+工
+
+211. 关于 BGP 防环机制,以下描述正确的是?
+□自治系统之间使用 AS-PATH 属性来防止环路。
+□Cluster List 属性用于反射器集群内防环，路由器发现路由条目的 Cluster List 包含自己的
+Cluster ID 就会拒收该路由
+□从 IBGP 学到的路由不会向 IBGP 邻居宣告,用于防止 AS 内部的路由环路。
+□可以使用 AS-CONFED-SET 属性防止联盟内的环路。
+
+西
+
+小
+
+作
+
+室
+
+答案：ACD
+
+212. 关于 Route Policy,以下描述正确的是?
+□高级 ACL 可以应用在 route-policy 中,对路由进行过滤
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+□表项 permit ::0 less-equal 128 表示允许所有 IPv6 路由通过
+□如果 Route-policy 中定义了一个以上的节点,各节点中至少应该有一个节点的匹配模式是
+permit
+□Route-Policy 可以只过滤缺省路由
+答案：BCD
+
+213. 以下哪个路由选择工具是 BGP 所特有的?
+○Route-policy
+○ACL
+○IP-prefix
+○AS-path-filter
+答案：D
+
+214. 如下图所示场景，正确的描述是
+○R1 同时存在 Level-1 和 Level-2 的 LSDB
+○R1 可以 Ping 通 R21 1oopbapk0 的接口地址
+○R1 存在到达 R2 1oopback0 10.0.2.2/32 的路由
+○R1、R2 之间不能建立邻居关系
+答案：C
+
+室
+
+作
+
+215. 某公司内部两台路由器配置如下，下列关于 R1 路由表说法正确的是
+○只有把 R2 ISIS 协议优先级调整为 5，则 R1 上目的网段为 10.0.2.2/32 的 P 路由条目才会由
+OSPF 生成
+○如果把 R1 的 ISIS 协议优先级调整为 5,则 R1 上目的网段为 10.0.2.2/32 的 P 路由条目由 OSPF
+生成
+○如果把 R1 ISIS 协议优先级调整为 5,则 R1 上目的网段为 10.0.2.2/32 的 P 路由条目由 ISIS 生
+成
+○如果把 R2 ISIS 协议优先级调整为 5,则 R1 上目的网段为 10.0.2.2/32 的 P 路由条目由 ISIS 生
+成
+
+西
+
+小
+
+0
+3
+群
+q
+q
+
+4
+5
+
+1
+1
+
+工
+
+答案：C
+
+216. 以下关于 BGP 的聚合,描述正确的是?
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+○配置 Aggregate ipv4-address mask 后,只发布聚合路由,不发布明细路由。
+○对于 IPv6 路由,BGP 支持手工聚合和自动聚合。
+○缺省情况下 BGP 启用自动聚合
+○可以对 BGP 本地路由表中的路由进行手工聚合。
+答案：D
+
+217. 以下关于 BGP 路由选择,描述错误的是?
+○非聚合路由优先于聚合路由。
+○在 Pref-Val 和 local_preference 相等的情况下,如果本地生成的路由、IBGP 路由、EBGP 路
+由的 BGP preference 一致,则本地生成的有效路由优先
+○在 BGP 路由表中看到下面的条目:* 172.16.1.11/32 0.0.0.0 10 0 ?代表该路由为可用非最
+优。
+○对于 nexthop 不可达的路由是无效路由,不参与优选。
+答案：A
+
+4
+5
+
+0
+3
+群
+q
+q
+
+1
+1
+
+218. 以下关于 LDP LSP 的建立过程，描述正确的是？
+□默认情况下，LSR 针对同一个 FEC，收到的标签映射只能来自最优下一跳，不能来自非最
+优下一跳
+□当网络拓扑变化引起下一跳邻居改变时，使用自由标签保持方式，LSR 可以直接利用原来
+非最优下一跳邻居发 来的标签迅速重建 LSP
+□标签发布 DoD 方式中，对于特定的 FEC，LSR 无需从上游获得标签请求消息即进行标签分
+配与分发
+□LSP 的建立过程实际就是将 FEC 和标签进行绑定，并将这种绑定通告 LSP 上游 LSR 的过程
+
+室
+
+西
+
+小
+
+作
+
+工
+
+答案：BCD
+
+219. 如图所示，
+在 MPLS bgp VPN 的 hub&spoke 组播模式中，
+为了实现分部只能与总部通信，
+分部之间不能通信，RT 的设置可以是以下哪种方案？
+○
+总部: Import Target：12:3 Export Target:12:3
+分部 1: Import Target:12:3 Export Target:12:3
+分部 2: Import Target:12:3 Export Target:12:3
+○
+总部: Import Target：1:1 Export Target:3:3
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+分部 1: Import Target:3:3 Export Target:1:1
+分部 2: Import Target:3:3 Export Target:2:2
+○
+总部: Import Target：2:2 Export Target:3:3
+分部 1: Import Target:3:3 Export Target:1:1
+分部 2: Import Target:3:3 Export Target:2:2
+○
+总部: Import Target:12:3 Export Target:3:12
+分部 1: Import Target:3:12 Export Target:12:3
+分部 2: Import Target:3:12 Export Target:12:3
+答案：D
+
+1
+1
+
+220. 下面关于 IPSec VPN 说法正确的是
+□野蛮模式可以支持 NAT 穿越,而主模式不支持 NAT 穿越
+□两台路由器通过主模式建立 IPSec VPN,从第 5 个报文(包含)开始,载荷的数据常会被加密
+□两台路由器通过野蛮模式建立 IPSec VPN,那么两台设备之间最少交互 4 个报文才建立隧
+道
+□两台路由器之间可以通过 IPSec VPN 隧道建立 OSPF 邻居关系,并交换内网路由
+
+4
+5
+
+答案：BC
+
+室
+
+作
+
+0
+3
+群
+q
+q
+
+221. 配置基于队列的流量整形,如果队列长度超过了缓存大小,则默认进行尾丢弃
+○正确
+○错误
+
+西
+
+工
+
+答案：B
+
+小
+
+222. 如图所示，下列说法正确的是
+□如果 R2 Ethernet0/0/1 接口 down,则 R1 BFD 会话可以快速感知故障,并通知 R1 使 OSPF 邻
+居关系 down
+□OSPF 状态变为 FULL,才会触发 BFD 会话 UP
+□如果 R2 Ethernet0/0/0 接口 down,则 R1 到达 10.0.2.2 的路由下一跳更改为 10.0.21.2
+□如果 R2 关闭 BFD 功能,R1 的 BFD 会话将变为 down,会导致 ospf 邻居关系 down
+□如果 R2 Ethernet0/0/1 接口 down,则 R1 到达 10.0.2.2 的路由下一跳更改为 10.0.12.2
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+答案：AD
+
+223. 对于二层 VPN 技术，下列说法正确的是？
+□VPLS 是现网广泛应用的技术，能够提供三层报文透传，能够实现多点接入
+□VPLS 配置复杂度较高，二层网络透传 BUM 报文
+□BGP EVPN 支持租户隔离，multi-homing 和广播抑制等功能
+□BGP EVPN 解决了 VPLS 无法支持的 MAC 地址漂移和多租户等问题
+答案：BCD
+
+224. 如果有一个运行 802.1D 生成树协议的局域网，非根交换机不会从根交换机收到以下的
+哪个参数?
+○MaxAge
+○Root cost
+○Forward delay
+○Hold time
+○Hello time
+
+4
+5
+
+答案：D
+
+室
+
+0
+3
+群
+q
+q
+
+1
+1
+
+225. 下面关于 802.1s 部署特点描述正确的是?
+○多个网桥共享一个生成树实例
+○所有 VLAN 共享一个生成树实例
+○每个 VLAN 共享一个生成树实例
+○多个 VLAN 共享一个生成树实例
+
+作
+
+西
+
+工
+
+答案：D
+
+小
+
+226. 为了减少某些末梢区域 OSPF 路由数量,OSPF 协议开发了特殊区域功能,下面关于 OSPF
+特殊区域的特征描述正确的是?
+○特殊区域路由器不能与常规区域路由器建立 OSPF 邻居关系
+○任何 OSPF 区域都可以配置为特殊区域
+○As -External-lsa 许被发布到 Stub 区域
+○ASBR-Summary-LSA 允许被发布到 NSSA 区域
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+答案：A
+
+227. 某工程师为了研究 OSPFv3 协议的工作机制搭建网络拓扑如下,其中 R1 和 R2 的配置如
+下,请间 R1 与 R2 之间交换 的 LSA 类型有哪些?
+
+R1 配置
+ospfv3 1
+router-id 1.1.1.1
+interface Gigabitethernet0/0/0
+ipv6 enable
+ipv6 address auto link-local
+ospfv3 1 area 0
+R2 配置
+ipv6
+ospfv3 1
+router-id 2.2.2.2
+interface Gigabitethernet0/0/0
+ipv6 enable
+ipv6 address auto link-local
+ospfv3 1 area 0.0.0.0
+□Router-lsa
+□Link-LSA
+□Network-LSA
+□Inter-area-prefix-lsa
+
+室
+
+作
+
+西
+
+小
+
+0
+3
+群
+q
+q
+
+4
+5
+
+1
+1
+
+工
+
+答案：ABC
+
+228. 如配置所示,管理员在 R1 上配置了 OSPF 但 R1 学习不到其他路由器的路由,那么可能的
+原因是
+[R1]ospf
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+[Rl-ospf-1]area 2
+[R1-ospf-1-area-0.0.0.2]network 10.0.13.1 0.0.0.0
+□此路由器配置的区域 ID 和它的邻居路由器的区域 ID 不同
+□此路由器没有配置 OSPF 进程号
+□此路由器的宣告网络地址没有匹配接口掩码
+□此路由器没有配置认证功能,但是邻居路由器配置了认证功能
+答案：AD
+
+229. 现有如下拓扑和配置，下列说法正确的是？
+
+4
+5
+
+室
+
+作
+
+0
+3
+群
+q
+q
+
+□R1 上不存在目的网段为 10.0.3.3/32 的路由
+□R1 上不存在目的网段为 10.0.2.2/32 的路由
+□R1 上存在目的网段为 10.0.3.3/32 的路由
+□R1 上存在目的网段为 10.0.2.2/32 的路由
+
+西
+
+小
+
+工
+
+答案：AD
+
+230. 如下图所示，R2 将会学习到哪些路由?
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+1
+1
+
+0
+3
+4
+
+小西工作室
+
+○R2
+○R2
+○R2
+○R2
+
+IT资料共享基地
+
+可以学习到 R1 的所有路由
+可以学习到 10.1.1.0/24 这一条路由。
+可以学习 10.1.2.0/24 和 10.1.3.0/24 这两条路由。
+可以收到 R1 的 LSP，但是无法加入到路由表。
+
+QQ群305411430
+
+答案：A
+
+0
+3
+群
+q
+q
+
+4
+5
+
+1
+1
+
+231. 在 MPLS VPN 中，RT 的作用是什么?
+□允许对端 PE 决定将哪些 VPNv4 路由导入到特定的 VRF 中
+□允许对端 PE 决定将哪些 VPNv4 路由不导入到特定的 VRF 中
+□允许对端 CE 决定将哪些 VPNv4 路由导入到特定的 VRF 中
+□允许对端 CE 决定将哪些 VPNv4 路由不导入到特定的 VRF 中
+
+室
+
+西
+
+小
+
+作
+
+工
+
+答案：AB
+
+232. 以下关于 MPLS BGP VPN 描述错误的是?
+○IBGP 使 ALoopback 接口地址建立稳定的 BGP 邻居关系。
+○PE-CE 间的路由交换可以采用静态路由、OSPF 多实例、IS-iS 多实例、EBGP
+○标签中 TTL 字段具有防止环路的作用。
+○BGP Soo 用来防止从一个 VPN 站点布出去的路由经过 MPLS 骨干网又回到该站点。Soo 是
+MP-BGP 自动生成的扩展团体属性。
+答案：D
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+233. 提高 MPLS BGP VPN 可靠性技术包括以下哪几种?
+□VPN GR
+□VPN FRR
+□在接入层配置 CE 双归属组网
+□PE 和 CE 之间的私网 IP 路由 FRR
+答案：ABCD
+
+234. 以下关于 VPNv4 地址的说法,描述错误的是?
+○在 BGP 发布可达和不可达的 VPNv4 路由时,都会携带 RD 属性。
+○缺省情况下,PE 不会对收到的 VPNv4 路由进行 vpn-target 过滤。
+○VPNv4 地址共有 12 个字节,包括 8 字的路由标识符 RD(Route Distinguisher)和 4 字节的 IPv4
+地址前缀。
+○本地 PE 在把从与自己直接相连的 site 学到的 VPNv4 路由发布给其它 PE 前,会为这些路由
+设置 Target 属性,并作 为 BGP 的扩展团体属性随路由发布。
+
+4
+5
+
+答案：B
+
+0
+3
+群
+q
+q
+
+1
+1
+
+235. 关于 MPLS 基本转发过程,以下描述错误的是?
+○当 IP 报文进入 MPLS 域时,检查目的 IP 地址对应的 Tunnel ID 如果 TunnelID 值为 0x0,则进
+入 MPLS 转发流程。
+○默认情况下,支持 PHP 的 Egress1 节点分配给倒数第二跳节点的标签值为 3。
+○当报文在 MPLS 域内转发时,根据标签转发表,用下一跳分配的标签,替换 MPLS 报文的栈顶
+标签。
+○当 IP 报文进入 MPLS 域时,MPLS 边界设备在报文二层首部和 IP 首部之间插入一个新标签。
+
+室
+
+工
+
+答案：A
+
+西
+
+小
+
+作
+
+236. 组播 IP 地址为 229.130.130.1,其对应的 MAC 地址为:
+○00-00-5E-02-82-01
+○00-00-5E-82-82-01
+○01-00-5E-82-82-01
+○01-00-5E-02-82-01
+答案：D
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+0
+3
+4
+
+小西工作室
+
+IT资料共享基地
+
+QQ群305411430
+
+237. 下面关于 IPSG 技术的说法中正确的是
+○ IPSG 可以对进入接口和离开接口的 P 报文进行绑定表匹配检查。
+○在华为路由器上,可以在 Vlanif 上配置 IPSG 功能
+○若一个接口配置为 DHCP Snooping Trust HCP ACK、 DHCP NAKHCP 和 Offerf 报文,其他非信
+任端口无法正常接 收这些报文。
+○ip source check user-bind check-item 命令用来配置基于 VLAN 或接口的 IP 报文检查项,该命
+令对动态和静态表项均生效。
+答案：C
+
+0
+3
+4
+
+238. 以下哪项关于 HTTPS 说法错误?
+○HTTPS 协议默认使用 TCP 端口 443
+○HTTPS 通过使用 SSL VPN 保障访问数据的安全。
+○当使用 HTTPS 访问某网站时,如果用户浏览器不能识别网站的数字证书,则不能访问该网站。
+○如果 HTTPS 流量中包含病毒,路由器无法使用 IPS 技术直接检测出病毒。
+
+4
+5
+
+答案：B
+
+0
+3
+群
+q
+q
+
+1
+1
+
+239. 在流量监管中运用双桶双速，C 桶中令牌数量 TC，P 桶中令牌数量 TP。当一个长度为
+B 的报文进入时，下面 哪句话描述是正确的?
+□如果 TP-B>0 且 TC-B>0 ， 该报文被标记为绿色
+□如果 TP-B>0 且 TC-B<0 ， 该报文被标记为黄色
+□如果 TP-B<0 且 TC-B<0 ， 该报文被标记为红色
+□如果 TP-B>0 且 TC-B<0，该报文被标记为绿色
+
+室
+
+西
+
+小
+
+作
+
+工
+
+答案：ABC
+
+240. BGP EVPN 中通告外部路由,使用以下哪类路由?
+○Type4
+○Type1
+○Type2
+○Type3
+○Type5
+答案：E
+
+HCIE RS H12-261 笔试题库 8th May 2019
+
+
